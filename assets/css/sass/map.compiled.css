@@ -1,0 +1,59 @@
+.map-container {
+  font-family: space mono;
+  padding: 3.2rem 0.8rem;
+  position: relative;
+  display: inline-block;
+}
+.map-container img {
+  width: 100%;
+}
+.map-container .point {
+  cursor: crosshair;
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #ff6d00;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  will-change: transform, box-shadow;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 rgba(255, 109, 0, 0.4);
+  animation: pulse 3s infinite;
+}
+.map-container .point:hover {
+  animation: none;
+  transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.map-container .namerica {
+  top: 38.5%;
+  left: 20.2%;
+}
+.map-container .europe {
+  top: 30.5%;
+  left: 52.1%;
+}
+.map-container .americacentral {
+  top: 50.5%;
+  left: 22.1%;
+}
+.map-container .americasur {
+  top: 67.5%;
+  left: 31.1%;
+}
+.map-container .restomundo {
+  top: 69.5%;
+  left: 86.1%;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 109, 0, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 25px rgba(255, 109, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 109, 0, 0);
+  }
+}

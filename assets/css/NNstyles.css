@@ -1,0 +1,282 @@
+.footer-dark {
+  /*border-top: 9px solid #2962ff;*/
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #0a1840;
+  border-top: 10px solid #ff6d00;
+  border-bottom: 40px solid #2962ff;
+}
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 1;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20%;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  color: #ff6d00;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.navbar-light .navbar-brand {
+  background-image: url("../../assets/img/logos/escoolar-03.svg");
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 40px;
+  background-position: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  /*color: #fff;*/
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  z-index: 1;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-light {
+  background-color: #eceff1!important;
+}
+
+text-blue {
+  color: #2962ff !important;
+}
+
+.stickybot {
+  position: fixed;
+  z-index: 20;
+  padding: 0px;
+  margin: 0px;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn.btn-primary {
+  border: #ff6d00 1px solid;
+}
+
+.btn.btn-primary:hover {
+  /*border: #ff3f14 1px solid;*/
+}
+
+semibold {
+  font-weight: 600 !important;
+}
+
+.verification-code {
+  border-radius: 4px;
+  /*width: 300px;*/
+  padding: 32px 64px;
+  border: 1px solid #eceff1;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 30px;
+  text-indent: 20px;
+  /*font-weight: 600;*/
+  color: #2962ff;
+  font-family: 'Cousine';
+}
+
+.btn.btn-secondary {
+  /*background-color: #90a4ae;*/
+  border-color: #e6ecf5;
+}
+
+.text-blue {
+  color: #2962ff !important;
+}
+
+.pago {
+  border: 1px solid #90a4ae;
+}
+
+.pago:hover {
+  border-color: #ff6d00;
+}
+
+.pasos {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 4px 9px;
+  color: #fff;
+  /*font-size: 8px;*/
+  /*text-transform: uppercase;*/
+  margin-bottom: 20px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.live {
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  border-radius: 1000px;
+  box-shadow: 0 0 0 15px #fff, 0 0 0 0px #fff, 0 0 0 0px #ff7373, 0 0 0 0px #fff, 0 0 0 0px #fff;
+  animation: liveanim 2s infinite;
+  /*transform: scale(2);*/
+}
+
+@keyframes liveanim {
+  0% {
+    box-shadow: 0 0 0 0px #fff, 0 0 0 0px #ff7373, 0 0 0 0px #fff, 0 0 0 0px #fff, 0 0 0 21px #fff;
+  }
+  60% {
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #ff7373, 0 0 0 9px #fff, 0 0 0 12px #ffaeae, 0 0 0 21px #fff;
+  }
+  100% {
+    box-shadow: 0 0 0 0px #fff, 0 0 0 0px #ff7373, 0 0 0 0px #fff, 0 0 0 0px #fff, 0 0 0 21px #fff;
+  }
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  border-bottom: 15px solid #2962ff;
+  background-position: center;
+  /*background-size: cover;*/
+  background-repeat: no-repeat !important;
+  background-image: url("../../assets/img/heroxs.png");
+}
+
+@media (min-width: 576px) {
+  .hero {
+    background-image: url("../../assets/img/herosm.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url("../../assets/img/heromd.png");
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    background-image: url("../../assets/img/herolg.png");
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: url("../../assets/img/heroxl.png");
+  }
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.table-wrapper {
+  overflow-y: scroll;
+  height: 60vh;
+}
+
+.table-wrapper th {
+  position: sticky;
+  top: 0;
+}
+
+.table-wrapper tfoot {
+  position: sticky;
+  bottom: 0;
+}
+
+.table-wrapper tf {
+  position: sticky;
+  bottom: 0;
+}
+

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="es-mx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>campuus.us | Tu escuela en simples pasos</title>
+    <meta name="twitter:description" content="Tu escuela digital en simples pasos">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="campuus.us | Tu escuela digital en simples pasos">
+    <meta name="description" content="Tu escuela digital en simples pasos">
+    <meta property="og:image" content="assets/img/opengraph.png">
+    <link rel="icon" type="image/svg+xml" sizes="150x150" href="assets/img/favicon.svg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cousine">
+    <link rel="stylesheet" href="assets/css/omnespro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/cardhover.css">
+    <link rel="stylesheet" href="assets/css/carruselc.compiled.css">
+    <link rel="stylesheet" href="assets/css/escoolar.css">
+    <link rel="stylesheet" href="assets/css/hover.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@1.1.3/dist/tippy.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/NNstyles.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/sass/bootstrap-select.compiled.css">
+    <link rel="stylesheet" href="assets/css/sass/daterangepicker.compiled.css">
+    <link rel="stylesheet" href="assets/css/sass/fullcalendar.compiled.css">
+    <link rel="stylesheet" href="assets/css/sass/ion.rangeSlider.compiled.css">
+    <link rel="stylesheet" href="assets/css/sass/jquery.mCustomScrollbar.min.compiled.css">
+    <link rel="stylesheet" href="assets/css/sass/leaflet.compiled.css">
+    <link rel="stylesheet" href="assets/css/sass/magnific-popup.compiled.css">
+    <link rel="stylesheet" href="assets/css/sass/map.compiled.css">
+    <link rel="stylesheet" href="assets/css/sass/mediaelement-playlist-plugin.min.compiled.css">
+    <link rel="stylesheet" href="assets/css/sass/mediaelementplayer.compiled.css">
+    <link rel="stylesheet" href="assets/css/sass/swiper.min.compiled.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+    <link rel="stylesheet" href="assets/css/tabordion.css">
+    <link rel="stylesheet" href="assets/css/typewriter.css">
+        <!-- Fix: reducir espacio entre header y hero en pantallas grandes -->
+        <style>
+            @media (min-width: 1200px) {
+                /* Ajustes en pantallas grandes:
+                   1) Reducimos el spacer para que el hero quede pegado al header fijo.
+                   2) Movemos la imagen de fondo del hero hacia arriba (background-position)
+                      para centrar el sujeto en pantallas grandes. Si prefieres otro encuadre,
+                      ajusta el porcentaje '20%' abajo. */
+                .header-spacer--standard { height: 70px !important; }
+                /* Mover la imagen de fondo del hero hacia arriba (subir el motivo). */
+                                .hero { background-position: center 20% !important; }
+            }
+        </style>
+                <!-- Darken + blue tint overlay for hero to improve text contrast -->
+                <style>
+                    .hero { position: relative; }
+                    .hero::before {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        /* Dark gradient over image + subtle blue tint */
+                        background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.35)), rgba(41,98,255,0.08);
+                        pointer-events: none;
+                        z-index: 1;
+                    }
+                    .hero .container-fluid, .hero .container { position: relative; z-index: 2; }
+                </style>
+                <!-- Panel oscuro para títulos y párrafos (estética gamer) -->
+                <style>
+                .text-panel {
+                    background: linear-gradient(180deg, rgba(2,6,23,0.78), rgba(8, 12, 28, 0.685));
+                    padding: 18px 20px;
+                    border-radius: 14px;
+                    box-shadow: 0 10px 30px rgba(2,6,23,0.6), 0 0 18px rgba(41,98,255,0.06) inset;
+                    border: 1px solid rgba(41,98,255,0.06);
+                    color: #ffffff;
+                    backdrop-filter: blur(4px);
+                }
+                .text-panel h2 { color: #fff !important; text-shadow: 0 3px 18px rgba(0,0,0,0.6); }
+                .text-panel p { color: rgba(255,255,255,0.92); line-height: 1.45; }
+                .text-panel .btn { margin-top: 12px; }
+                @media (max-width: 768px) {
+                    .text-panel { padding: 14px 16px; border-radius: 10px; }
+                    .text-panel h2 { font-size: 1.25rem; }
+                }
+                </style>
+</head>
+
+<body>
+    <!-- Header: main navigation, logo y menú responsive -->
+    <div id="header--standard" class="header--standard header--standard-dark" style="left: 0 !important;">
+        <div class="container-fluid">
+            <div class="header--standard-wrap"><a class="logo" href="index.html">
+                    <div class="img-wrap"></div>
+                </a><img src="assets/img/academyweb/logo-CC.svg" width="345" height="40" alt="Logo Campuus" loading="lazy"><a class="open-responsive-menu js-open-responsive-menu" href="#"><svg class="olymp-menu-icon"><use xlink:href="assets/img/svg-icons/sprites/icons.svg#olymp-menu-icon"></use></svg></a>
+                <div class="nav nav-pills nav1 header-menu">
+                    <div class="mCustomScrollbar">
+                        <ul>
+                            <li class="nav-item p-1"><a class="btn btn-primary m-0 px-5" role="button" style="padding: 12px 0px 12px 0px;">Iniciar sesión</a></li>
+                            <li class="close-responsive-menu js-close-responsive-menu"><svg class="olymp-close-icon"><use xlink:href="assets/img/svg-icons/sprites/icons.svg#olymp-close-icon"></use></svg></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-spacer--standard"></div>
+    <!-- Hero: sección principal con imagen de fondo, título y CTA -->
+    <section class="d-flex align-items-center medium-padding120 hero" style="background: url(&quot;assets/img/academyweb/ChatGPT%20Image%2017%20sept%202025,%2013_47_56.png&quot;) top / cover;">
+        <div class="container-fluid pt160">
+            <div class="row d-flex">
+                <div class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-6 col-xxl-4 offset-xl-1 d-flex flex-column justify-content-center">
+                    <div>
+                        <h5 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="2300" class="mb-4 ps-3" style="border-left: solid 20px #2962ff;color: var(--white);"><strong>Aprende a programar creando&nbsp;tus propios videojuegos</strong></h5>
+                        <h1 class="display-3" data-aos="fade" data-aos-duration="1000" data-aos-delay="1500" style="color: var(--white);"><strong>Crear es aprender para siempre.</strong></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-end" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="3000">
+                <div class="col-12 col-sm-8 col-lg-4 offset-xl-1">
+                    <div class="mt-4"><a class="btn btn-primary btn-lg mt-4 px-5" role="button" href="preregistro.html">Inscríbete ahora</a></div>
+                </div>
+                <div class="col-12 col-sm-8 col-lg-4 offset-xl-1">
+                    <div class="mt-4"><img src="assets/img/academyweb/logo-CC.svg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients/Partners: carrusel de logos y aliados -->
+    <section class="bg-white crumina-module crumina-clients">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="sliderf">
+                        <div class="slide-track">
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46" alt="Logo Blender" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Python.png" width="109" height="31" alt="Logo Python" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Scratch.png" width="111" height="66" alt="Logo Scratch" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/logos/X-Plane_11_logo.svg" style="max-height: 60px;max-width: 200px;" width="131" height="22" alt="Logo X-Plane" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/logos/arduino.svg" style="max-height: 55px;" width="54" height="37" alt="Logo Arduino" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46" alt="Logo Blender" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Python.png" width="109" height="31" alt="Logo Python" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Scratch.png" width="111" height="66" alt="Logo Scratch" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/logos/X-Plane_11_logo.svg" style="max-height: 60px;max-width: 200px;" width="131" height="22" alt="Logo X-Plane" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/logos/arduino.svg" style="max-height: 55px;" width="54" height="37" alt="Logo Arduino" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46" alt="Logo Blender" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Python.png" width="109" height="31" alt="Logo Python" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Scratch.png" width="111" height="66" alt="Logo Scratch" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/logos/X-Plane_11_logo.svg" style="max-height: 60px;max-width: 200px;" width="131" height="22" alt="Logo X-Plane" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/logos/arduino.svg" style="max-height: 55px;" width="54" height="37" alt="Logo Arduino" loading="lazy"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team / About: bloque con imagen y descripción del equipo que respalda -->
+    <section class="medium-padding100" style="background: url(&quot;assets/img/academyweb/ChatGPT%20Image%2020%20sept%202025,%2012_57_02.png&quot;), #0a1840;background-size: cover, auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center d-flex justify-content-center align-items-center" data-aos="fade-right" style="z-index: 2;"><img data-bss-hover-animate="swing" class="shadow" src="assets/img/academyweb/AP_kid_laptop_story_1080x1920.png" style="max-height: 521px;border-radius: 3px;" alt="Niño usando laptop" loading="lazy"></div>
+                <div class="col-lg-4 d-flex align-items-center py-5" data-aos="fade-right" data-aos-delay="500" style="z-index: 1;">
+                    <div>
+                        <h1 class="text-light pb-4"><strong>El equipo que nos respalda</strong></h1>
+                        <div class="mb-4" style="width: 80px;"><img src="assets/img/academyweb/div-cyan.svg"></div>
+                        <div>
+                            <p class="text-white" style="line-height: 26px;">Academy Plus es una institución educativa de Estados Unidos (Miami, Florida) con sólida trayectoria y&nbsp; experiencia. Conectamos a niños y jóvenes con las habilidades del futuro a través de nuestras rutas en&nbsp;Primaria, Secundaria, Preparatoria y Coding College. Enseñamos con proyectos reales, mentoría cercana&nbsp;y retos que inspiran. Nuestra misión es transformar curiosidad en confianza y talento en impacto. Aprender creando, mostrar con orgullo, crecer en comunidad</p>
+                            <p class="text-white mb30" style="line-height: 26px;">&nbsp;Filosofía educativa: Aprender haciendo (project-based learning), resultados visibles desde la&nbsp;primera semana. Juego con propósito, usamos videojuegos como motor de motivación genuina.<br>Progresión clara, de bloques visuales (Scratch) a código real (Python, C#), pasando por Roblox&nbsp;Studio y Unity.</p><a class="btn btn-outline-primary btn-md-2" role="button" href="conocenos.html">Conócenos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features / Cards: tarjetas de proyectos y rutas de aprendizaje -->
+    <section class="medium-padding100" style="background: url(&quot;assets/img/bg-xl2.svg&quot;) top / cover repeat-y;">
+        <div class="container">
+            <div class="row mb60">
+                <div class="col col-xl-6 col-lg-6 m-auto col-md-12 col-sm-12 col-12">
+                    <div class="crumina-module crumina-heading align-center">
+                        <div data-aos="fade" class="heading-sup-title"><span><strong>Four Boss Levels.</strong></span>
+                            <div class="my-4 mx-auto" style="width: 80px;"><img src="assets/img/academyweb/div-yellow.svg" alt="decorative divider amarillo" loading="lazy"></div>
+                        </div>
+                        <h1 data-aos="fade-up" class="text-blue"><strong>&nbsp;Proyectos reales, resultados visibles.</strong></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-right" data-aos-delay="150">
+                    <div class="card rounded hvr-grow" style="border-top: 5px solid #00e5ff;height: 100%;background: rgba(255,255,255,0);">
+                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(/assets/img/academyweb/bg/graficos-de-acuarios-al-aire-libre-bajo-el-mar.jpg);background-size: cover;">
+                            <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%204.svg" width="352" height="123" alt="Recurso 4" loading="lazy">
+                                <h2 class="mb-3" style="color: var(--white);"><strong>Explorando videojuegos</strong></h2>
+                                <p style="color: var(--white);">Objetivo: encender la chispa: lógica básica, pensamiento computacional y diseño de juegos <br>sencillos.<br><br>Herramientas: Scratch, Minecraft Education y Roblox <br><br>Resultado: tu primer videojuego jugable y presentado a la familia.<br><br></p>
+                                </div><a class="btn btn-outline-primary btn-md-2" role="button" href="curricula.html">Leer más</a>
+                                </div>
+                                
+                    </div>
+                </div>
+                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card rounded hvr-grow" style="border-top: 5px solid #2962ff;height: 100%;background: rgba(255,255,255,0);">
+                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(&quot;assets/img/academyweb/ChatGPT%20Image%2020%20sept%202025,%2012_57_02.png&quot;);background-size: cover;">
+                            <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%205.svg" alt="Recurso 5" loading="lazy">
+                                <h2 class="mb-3" style="color: var(--white);"><strong>Desarrollo de videojuego</strong></h2>
+                                <p style="color: var(--white);">Objetivo: llevar ideas a&nbsp;juegos completos:&nbsp; eventos, colisiones, UI y&nbsp;publicación básica.<br><br> Herramientas: Roblox&nbsp;Studio (básico avanzado) y/o Godot (introducción).<br><br> Resultado: un juego&nbsp;3D/2D funcional con&nbsp;testeo y mejoras iterativas&nbsp;</p>
+                            </div><a class="btn btn-outline-primary btn-md-2" role="button" href="acercamiento.html">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card rounded hvr-grow" style="border-top: 5px solid #0a1840;height: 100%;background: rgba(255,255,255,0);">
+                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(&quot;assets/img/academyweb/ChatGPT%20Image%2020%20sept%202025,%2012_57_02.png&quot;);background-size: cover;">
+                            <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%206.svg" alt="Recurso 6" loading="lazy">
+                                <h2 class="mb-3" style="color: var(--white);"><strong>Desarrollo de videojuego</strong></h2>
+                                <p style="color: var(--white);">Objetivo: llevar ideas a&nbsp;juegos completos:&nbsp; eventos, colisiones, UI y&nbsp;publicación básica.<br><br> Herramientas: Roblox&nbsp;Studio (básico avanzado) y/o Godot (introducción).<br><br> Resultado: un juego&nbsp;3D/2D funcional con&nbsp;testeo y mejoras iterativas&nbsp;</p>
+                            </div><a class="btn btn-outline-primary btn-md-2" role="button" href="acercamiento.html">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal: formulario de inicio de sesión -->
+    <div class="modal fade" role="dialog" tabindex="-1" id="login" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-dialog m-0" role="document" style="background: #fff;">
+                    <div class="modal-content"><a href="#" class="close icon-close" data-dismiss="modal" aria-label="Close">
+			</a>
+                        <div class="text-center modal-header" style="background:#2962ff">
+                            <h6 class="text-center text-white title">Iniciar sesión en escoolar<small><strong>.com</strong></small></h6>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                        <div class="label-floating form-group mb-3"><label class="form-label control-label">Ingresa tu usuario</label><input class="form-control" type="email" style="background: #fff;"></div>
+                                        <div class="label-floating form-group mb-3"><label class="form-label control-label">Ingresa tu contraseña</label><input class="form-control" type="password" style="background: #fff;"></div>
+                                        <div class="remember">
+                                            <div class="checkbox"><label class="form-label">Recordarme<input type="checkbox"></label></div><a class="forgot" href="account-recuperarcontrasena.html" data-bs-toggle="modal" data-bs-target="#restore-password">¿Olvidaste tu contraseña?</a>
+                                        </div><a class="btn btn-primary btn-lg full-width" role="button" href="perfiles/perfiles-wizard-1.html">Iniciar sesión</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="bg-light d-flex justify-content-center modal-footer">
+                            <p class="text-center mt-2">¿Aún no tienes una cuenta?<br><a class="me-1" href="registro/registro.html"><strong>¡Regístrate ahora!</strong></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Back to top: botón para volver arriba -->
+    <a class="back-to-top" href="#"><img src="assets/img/svg-icons/back-to-top.svg" alt="arrow" class="back-icon"></a>
+    <!-- Footer: contacto, enlaces y redes sociales -->
+    <div id="footer" class="footer footer--dark footer-dark shadow">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="widget w-about"><a class="logo" href="index.html">
+                            <div class="img-wrap"><img src="assets/img/autoores/logos/autoores.svg" width="200px" alt="Logo Autoores" loading="lazy"></div>
+                        </a><img class="ps-1 mt-3" src="assets/img/tirabanderas.svg" alt="Banderas" loading="lazy">
+                        <p class="text-white-50 mt-4">Descubre una experiencia de aprendizaje única, innovadora e interactiva.<br></p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2 offset-lg-2">
+                    <div class="widget w-list"></div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                    <div class="widget w-list">
+                        <h6 class="text-white-50">Productos</h6>
+                        <ul>
+                            <li><a href="https://www.escoolar.com/academy" style="font-family: 'omnespro';">autoores</a></li>
+                            <li><a href="https://www.escoolar.com/academy" style="font-family: 'omnespro';">academy</a></li>
+                            <li><a href="https://www.campuus.us" style="font-family: 'omnespro';">campuus</a></li>
+                            <li><a href="https://www.escoolar.com/" style="font-family: 'omnespro';">escoolar</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+                    <div class="widget w-list">
+                        <h6 class="text-white-50">Contacto</h6>
+                        <p>Brindamos un servicio excepcional y nos encantaría que puedas experimentarlo.<br></p><a href="mailto:soporte@escoolar.mx"><i class="far fa-envelope me-1"></i>soporte@escoolar.mx</a><a href="tel:+525588805183"><i class="fas fa-phone-alt me-1"></i>+52 (55) 8880 5183</a>
+                    </div>
+                </div>
+                <div class="col-12 item social py-4"><a href="https://www.facebook.com/plataformaescoolar/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/plataformaescoolar/" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.youtube.com/channel/UCJtPDofwONzvgxZX60HgM2A" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div>
+                <div class="col col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="sub-footer-copyright"><span>Trabajamos con amor y dedicación&nbsp;<i class="fas fa-heart mx-1" data-bss-hover-animate="bounce"></i>&nbsp;|&nbsp; &nbsp; &nbsp;<a href="https://www.escoolar.com">escoolar.<small>com</small></a>&nbsp;© 2021&nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp;Todos los derechos reservados.</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts: dependencias JavaScript y scripts de la página (cargar al final) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/libs/handlebars.runtime.js"></script>
+    <script src="assets/js/libs/lazyload.js"></script>
+    <script src="assets/js/libs/sticky-sidebar.js"></script>
+    <script src="assets/js/libs/tether.js"></script>
+    <script src="assets/js/libs/webfontloader.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/libs/jquery.appear.js"></script>
+    <script src="assets/js/libs/jquery.mousewheel.js"></script>
+    <script src="assets/js/libs/perfect-scrollbar.js"></script>
+    <script src="assets/js/libs/jquery.matchHeight.js"></script>
+    <script src="assets/js/typewriter.js"></script>
+    <script src="assets/js/libs/svgxuse.js"></script>
+    <script src="assets/js/libs/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/libs/Headroom.js"></script>
+    <script src="assets/js/libs/velocity.js"></script>
+    <script src="assets/js/libs/ScrollMagic.js"></script>
+    <script src="assets/js/libs/jquery.waypoints.js"></script>
+    <script src="assets/js/libs/jquery.countTo.js"></script>
+    <script src="assets/js/libs/popper.min.js"></script>
+    <script src="assets/js/libs/material.min.js"></script>
+    <script src="assets/js/libs/bootstrap-select.js"></script>
+    <script src="assets/js/libs/smooth-scroll.js"></script>
+    <script src="assets/js/libs/selectize.js"></script>
+    <script src="assets/js/libs/swiper.jquery.js"></script>
+    <script src="assets/js/libs/moment.js"></script>
+    <script src="assets/js/libs/daterangepicker.js"></script>
+    <script src="assets/js/libs/fullcalendar.js"></script>
+    <script src="assets/js/libs/isotope.pkgd.js"></script>
+    <script src="assets/js/libs/ajax-pagination.js"></script>
+    <script src="assets/js/libs/Chart.js"></script>
+    <script src="assets/js/libs/chartjs-plugin-deferred.js"></script>
+    <script src="assets/js/libs/circle-progress.js"></script>
+    <script src="assets/js/libs/loader.js"></script>
+    <script src="assets/js/libs/run-chart.js"></script>
+    <script src="assets/js/libs/jquery.magnific-popup.js"></script>
+    <script src="assets/js/libs/jquery.gifplayer.js"></script>
+    <script src="assets/js/libs/mediaelement-and-player.js"></script>
+    <script src="assets/js/libs/mediaelement-playlist-plugin.min.js"></script>
+    <script src="assets/js/libs/ion.rangeSlider.js"></script>
+    <script src="assets/js/libs/leaflet.js"></script>
+    <script src="assets/js/libs/MarkerClusterGroup.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/libs-init/libs-init.js"></script>
+    <script src="assets/js/fonts/fontawesome-all.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/libs/hero.js"></script>
+    <script src="assets/js/libs/slick.js"></script>
+    <script src="https://unpkg.com/tippy.js@1.1.3/dist/tippy.min.js"></script>
+    <script src="assets/js/pricing.js"></script>
+</body>
+
+</html>

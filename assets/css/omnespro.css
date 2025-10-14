@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'omnespro';
+	src: url(../../assets/fonts/OmnesPro-Medium.woff2) format('woff2'),
+	url(../../assets/fonts/OmnesPro-Medium.woff) format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: auto;
+}
