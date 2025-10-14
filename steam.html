@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>campuus.us | Tu escuela en simples pasos</title>
+    <title>Coding College | Tu escuela en simples pasos</title>
     <meta name="twitter:description" content="Tu escuela digital en simples pasos">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
@@ -69,6 +69,12 @@
                         z-index: 1;
                     }
                     .hero .container-fluid, .hero .container { position: relative; z-index: 2; }
+                </style>
+                <!-- Small helper for logos inside cards -->
+                <style>
+                .card-logos { display:flex; gap:10px; align-items:center; justify-content:flex-start; margin-top:12px; flex-wrap:wrap; }
+                .card-logos img { max-height:34px; opacity:0.98; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.35)); border-radius:6px; background: rgba(255,255,255,0.02); padding:6px; }
+                @media (max-width:768px) { .card-logos img{ max-height:28px; padding:4px } .card-logos { gap:8px } }
                 </style>
                 <!-- Panel oscuro para títulos y párrafos (estética gamer) -->
                 <style>
@@ -181,7 +187,7 @@
         </div>
     </section>
     <!-- Features / Cards: tarjetas de proyectos y rutas de aprendizaje -->
-    <section class="medium-padding100" style="background: url(&quot;assets/img/bg-xl2.svg&quot;) top / cover repeat-y;">
+    <section class="medium-padding100" style="background: url(/assets/img/academyweb/bg/104532.jpg) top / cover repeat-y;">
         <div class="container">
             <div class="row mb60">
                 <div class="col col-xl-6 col-lg-6 m-auto col-md-12 col-sm-12 col-12">
@@ -195,33 +201,51 @@
             </div>
             <div class="row">
                 <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-right" data-aos-delay="150">
-                    <div class="card rounded hvr-grow" style="border-top: 5px solid #00e5ff;height: 100%;background: rgba(255,255,255,0);">
-                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(/assets/img/academyweb/bg/graficos-de-acuarios-al-aire-libre-bajo-el-mar.jpg);background-size: cover;">
+                    <div class="card rounded hvr-grow" style="height: 100%;background: rgba(255,255,255,0);border: none;">
+                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(/assets/img/academyweb/bg/graficos-de-acuarios-al-aire-libre-bajo-el-mar.jpg);background-size: cover; height: 100vh;">
                             <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%204.svg" width="352" height="123" alt="Recurso 4" loading="lazy">
                                 <h2 class="mb-3" style="color: var(--white);"><strong>Explorando videojuegos</strong></h2>
                                 <p style="color: var(--white);">Objetivo: encender la chispa: lógica básica, pensamiento computacional y diseño de juegos <br>sencillos.<br><br>Herramientas: Scratch, Minecraft Education y Roblox <br><br>Resultado: tu primer videojuego jugable y presentado a la familia.<br><br></p>
-                                </div><a class="btn btn-outline-primary btn-md-2" role="button" href="curricula.html">Leer más</a>
+                                <div class="card-logos" aria-hidden="false">
+                                    <img src="assets/img/steam/logos/Logo_Blender.svg" alt="Blender" loading="lazy">
+                                    <img src="assets/img/steam/logos/roblox.png" alt="Roblox" loading="lazy">
+                                    <img src="assets/img/steam/logos/Python.png" alt="Python" loading="lazy">
+                                    <img src="assets/img/steam/logos/Scratch.png" alt="Scratch" loading="lazy">
+                                    <img src="assets/img/logos/arduino.svg" alt="Arduino" loading="lazy">
+                                </div></div><a class="btn btn-outline-primary btn-md-2" role="button" href="curricula.html">Leer más</a>
                                 </div>
                                 
                     </div>
                 </div>
                 <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card rounded hvr-grow" style="border-top: 5px solid #2962ff;height: 100%;background: rgba(255,255,255,0);">
-                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(&quot;assets/img/academyweb/ChatGPT%20Image%2020%20sept%202025,%2012_57_02.png&quot;);background-size: cover;">
+                    <div class="card rounded hvr-grow" style="height: 100%;background: rgba(255,255,255,0);border: none;">
+                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(/assets/img/academyweb/bg/101019.jpg);background-size: cover; height: 100vh;">
                             <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%205.svg" alt="Recurso 5" loading="lazy">
                                 <h2 class="mb-3" style="color: var(--white);"><strong>Desarrollo de videojuego</strong></h2>
                                 <p style="color: var(--white);">Objetivo: llevar ideas a&nbsp;juegos completos:&nbsp; eventos, colisiones, UI y&nbsp;publicación básica.<br><br> Herramientas: Roblox&nbsp;Studio (básico avanzado) y/o Godot (introducción).<br><br> Resultado: un juego&nbsp;3D/2D funcional con&nbsp;testeo y mejoras iterativas&nbsp;</p>
-                            </div><a class="btn btn-outline-primary btn-md-2" role="button" href="acercamiento.html">Leer más</a>
+                                <div class="card-logos" aria-hidden="false">
+                                    <img src="assets/img/steam/logos/Logo_Blender.svg" alt="Blender" loading="lazy">
+                                    <img src="assets/img/steam/logos/roblox.png" alt="Roblox" loading="lazy">
+                                    <img src="assets/img/steam/logos/Python.png" alt="Python" loading="lazy">
+                                    <img src="assets/img/steam/logos/Scratch.png" alt="Scratch" loading="lazy">
+                                    <img src="assets/img/logos/arduino.svg" alt="Arduino" loading="lazy">
+                                </div></div><a class="btn btn-outline-primary btn-md-2" role="button" href="acercamiento.html">Leer más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card rounded hvr-grow" style="border-top: 5px solid #0a1840;height: 100%;background: rgba(255,255,255,0);">
-                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(&quot;assets/img/academyweb/ChatGPT%20Image%2020%20sept%202025,%2012_57_02.png&quot;);background-size: cover;">
+                    <div class="card rounded hvr-grow" style="height: 100%;background: rgba(255,255,255,0);border: none;">
+                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(&quot;assets/img/academyweb/ChatGPT%20Image%2020%20sept%202025,%2012_57_02.png&quot;);background-size: cover; height: 100vh;">
                             <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%206.svg" alt="Recurso 6" loading="lazy">
                                 <h2 class="mb-3" style="color: var(--white);"><strong>Desarrollo de videojuego</strong></h2>
                                 <p style="color: var(--white);">Objetivo: llevar ideas a&nbsp;juegos completos:&nbsp; eventos, colisiones, UI y&nbsp;publicación básica.<br><br> Herramientas: Roblox&nbsp;Studio (básico avanzado) y/o Godot (introducción).<br><br> Resultado: un juego&nbsp;3D/2D funcional con&nbsp;testeo y mejoras iterativas&nbsp;</p>
-                            </div><a class="btn btn-outline-primary btn-md-2" role="button" href="acercamiento.html">Leer más</a>
+                                <div class="card-logos" aria-hidden="false">
+                                    <img src="assets/img/steam/logos/Logo_Blender.svg" alt="Blender" loading="lazy">
+                                    <img src="assets/img/steam/logos/roblox.png" alt="Roblox" loading="lazy">
+                                    <img src="assets/img/steam/logos/Python.png" alt="Python" loading="lazy">
+                                    <img src="assets/img/steam/logos/Scratch.png" alt="Scratch" loading="lazy">
+                                    <img src="assets/img/logos/arduino.svg" alt="Arduino" loading="lazy">
+                                </div></div><a class="btn btn-outline-primary btn-md-2" role="button" href="acercamiento.html">Leer más</a>
                         </div>
                     </div>
                 </div>
