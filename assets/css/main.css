@@ -156,6 +156,39 @@ if the page has a “right panel”, add a class for BODY -- ".page-has-right-pa
   z-index: 21;
 }
 
+/* Helper para cuarta card full-width (imagen + panel) */
+.fullwidth-card .card-body { padding: 0; display: flex; flex-direction: column; }
+.fullwidth-card .card-image {
+  min-height: 220px; background-position: center; background-size: cover; border-radius: 10px 10px 0 0;
+}
+@media (min-width: 768px) {
+  .fullwidth-card .card-body { flex-direction: row; }
+  .fullwidth-card .card-image { border-radius: 10px 0 0 10px; width: 40%; }
+  .fullwidth-card .card-content { width: 60%; padding: 24px; }
+}
+@media (max-width: 767px) {
+  .fullwidth-card .card-content { padding: 16px; }
+}
+
+/* Full-bleed helper: hace que un elemento dentro de un .container ocupe todo el ancho del viewport
+   sin sacarlo del flujo (útil para cards que deben 'romper' el container sin mover DOM). */
+.full-bleed-card {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  box-sizing: border-box;
+  padding-left: 1rem; /* mantener algo de padding interno */
+  padding-right: 1rem;
+}
+.full-bleed-card .card-body { padding: 0; }
+.full-bleed-card .text-panel { margin: 0; }
+@media (min-width: 768px) {
+  .full-bleed-card { padding-left: 3rem; padding-right: 3rem; }
+}
+
 .header .page-title {
   padding: 26px 50px 26px 100px;
   text-transform: uppercase;
