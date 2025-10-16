@@ -183,8 +183,10 @@ if the page has a “right panel”, add a class for BODY -- ".page-has-right-pa
   padding-left: 1rem; /* mantener algo de padding interno */
   padding-right: 1rem;
 }
-.full-bleed-card .card-body { padding: 0; }
-.full-bleed-card .text-panel { margin: 0; }
+/* Para la card expandida: permitir padding interior y fondo transparente
+  (eliminamos la columna de imagen, por eso no debe quedar un rectángulo oscuro). */
+.full-bleed-card .card-body { padding: 1rem; background: transparent; }
+.full-bleed-card .text-panel { margin: 0; background: transparent; }
 @media (min-width: 768px) {
   .full-bleed-card { padding-left: 3rem; padding-right: 3rem; }
 }
