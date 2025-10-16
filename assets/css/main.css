@@ -191,6 +191,43 @@ if the page has a “right panel”, add a class for BODY -- ".page-has-right-pa
   .full-bleed-card { padding-left: 3rem; padding-right: 3rem; }
 }
 
+/* Video de fondo para hero */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(3,9,23,0.45), rgba(3,9,23,0.6));
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Asegurarse de que el contenido del hero esté por encima del video y overlay */
+.hero > .container-fluid,
+.hero .container,
+.hero .row,
+.hero .col-12 {
+  position: relative;
+  z-index: 2;
+}
+
+/* Respeto a prefer-reduced-motion: ocultar video si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+  .hero-video { display: none; }
+  .hero-overlay { background: rgba(3,9,23,0.55); }
+}
+
 .header .page-title {
   padding: 26px 50px 26px 100px;
   text-transform: uppercase;
