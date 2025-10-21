@@ -173,6 +173,7 @@ if the page has a “right panel”, add a class for BODY -- ".page-has-right-pa
 /* Full-bleed helper: hace que un elemento dentro de un .container ocupe todo el ancho del viewport
    sin sacarlo del flujo (útil para cards que deben 'romper' el container sin mover DOM). */
 .full-bleed-card {
+  /* usar transform para centrar y evitar problemas con scrollbars en móviles */
   position: relative;
   left: 50%;
   right: 50%;
@@ -189,6 +190,14 @@ if the page has a “right panel”, add a class for BODY -- ".page-has-right-pa
 .full-bleed-card .text-panel { margin: 0; background: transparent; }
 @media (min-width: 768px) {
   .full-bleed-card { padding-left: 3rem; padding-right: 3rem; }
+}
+
+/* Evitar overflow horizontal en dispositivos móviles causado por elementos 100vw */
+html, body { overflow-x: hidden; }
+
+/* Si la técnica full-bleed da problemas en pantallas pequeñas, desactivar el bleed */
+@media (max-width: 767px) {
+  .full-bleed-card { left: 0; transform: none; width: auto; margin: 0; padding-left: 0.75rem; padding-right: 0.75rem; }
 }
 
 /* Video de fondo para hero */
@@ -226,6 +235,29 @@ if the page has a “right panel”, add a class for BODY -- ".page-has-right-pa
 @media (prefers-reduced-motion: reduce) {
   .hero-video { display: none; }
   .hero-overlay { background: rgba(3,9,23,0.55); }
+}
+
+/* Badges de edad para modules */
+.module-card { position: relative; }
+.module-age {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(180deg,#ff7a00,#ff5a00);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(11,17,34,0.45);
+  z-index: 5;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .module-age { width: 40px; height: 40px; font-size: 14px; top: 8px; right: 8px; }
 }
 
 .header .page-title {
