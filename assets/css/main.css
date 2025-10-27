@@ -269,6 +269,7 @@ html, body { overflow-x: hidden; }
   background-repeat: no-repeat;
   position: relative; /* for overlay pseudo-element */
   overflow: hidden;
+  border-radius: 10px;
 }
 .module-card.bg-image .card-body::before {
   content: '';
