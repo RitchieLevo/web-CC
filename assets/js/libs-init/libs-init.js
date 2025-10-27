@@ -43,9 +43,9 @@ $('.owl-carousel').owlCarousel({
             items:3
         },
         992:{
-            items:4,
+            items:8,
             nav:false,
-            loop:false
+            loop:true
         }
     }
 })
