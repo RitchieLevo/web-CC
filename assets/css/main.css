@@ -263,7 +263,7 @@ html, body { overflow-x: hidden; }
 /* Background image + dark overlay for specific module cards (use class .bg-image on the card) */
 .module-card.bg-image .card-body {
   /* image fills the whole card-body */
-  background-image: url('/assets/img/academyweb/bg/101019.jpg');
+  background-image: url('../img/academyweb/bg/back-game1.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
