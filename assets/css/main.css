@@ -189,7 +189,7 @@ if the page has a “right panel”, add a class for BODY -- ".page-has-right-pa
 .full-bleed-card .card-body { padding: 1rem; background: transparent; }
 .full-bleed-card .text-panel { margin: 0; background: transparent; }
 @media (min-width: 768px) {
-  .full-bleed-card { padding-left: 3rem; padding-right: 3rem; }
+  .full-bleed-card { padding-left: 6rem; padding-right: 7rem; }
 }
 
 /* Evitar overflow horizontal en dispositivos móviles causado por elementos 100vw */
@@ -217,7 +217,7 @@ html, body { overflow-x: hidden; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(3,9,23,0.45), rgba(3,9,23,0.6));
+  background: linear-gradient(180deg, rgba(77, 77, 78, 0.187), rgba(215, 215, 215, 0.321));
   z-index: 1;
   pointer-events: none;
 }
