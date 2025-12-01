@@ -53,18 +53,19 @@
     <link rel="stylesheet" href="assets/css/tabordion.css">
     <link rel="stylesheet" href="assets/css/typewriter.css">
     <link rel="stylesheet" href="assets/css/bokeh.compiled.css">
-        <!-- INICIO: Ajustes header/hero añadidos (documentado) -->
-        <!-- Propósito: reducir el espacio entre header y hero en pantallas >=1200px
-             y ajustar el 'background-position' del hero para un mejor encuadre en pantallas grandes. -->
+   
+    
         <style>
             @media (min-width: 1200px) {
                 .header-spacer--standard { height: 70px !important; }
                 .hero { background-position: center 20% !important; }
             }
+            p {font-size: calc(1em * 1.15) !important;line-height: 1.6 !important;
+}
+
+
         </style>
-        <!-- FIN: Ajustes header/hero añadidos -->
-                <!-- INICIO: Overlay hero (oscurecer + tinte azul) -->
-                <!-- Propósito: mejorar contraste del texto sobre el video/imagen del hero mediante un pseudo-elemento. -->
+       
                 <style>
                     .hero { position: relative; }
                     .hero::before {
@@ -77,9 +78,7 @@
                     }
                     .hero .container-fluid, .hero .container { position: relative; z-index: 2; }
                 </style>
-                <!-- FIN: Overlay hero -->
-                <!-- INICIO: Helper CSS para logos dentro de las cards -->
-                <!-- Propósito: controlar tamaño, espaciado y aspecto de las imágenes de logos dentro de cada card. -->
+                
                 <style>
                 .card-logos { display:flex; gap:10px; align-items:center; justify-content:flex-start; margin-top:12px; flex-wrap:wrap; }
                 .card-logos img { max-height:40px; opacity:0.98; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.35)); border-radius:6px; background: rgba(255,255,255,0.02); padding:6px; }
@@ -161,7 +160,7 @@
                 <div class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-6 col-xxl-4 offset-xl-1 d-flex flex-column justify-content-center">
                     <div>
                         
-                        <img src="assets/img/academyweb/logo-CC.svg" width="250px" height="40" alt="Logo Campuus"
+                        <img src="assets/img/academyweb/logos/logotipo-cc.svg" width="250px" height="40" alt="Logo Campuus"
                         style="margin-bottom: 20px;"
                         loading="lazy">
 
@@ -184,8 +183,20 @@
         </div>
     </section>
     <!-- FIN: Fourth card full-width -->
-    <!-- Clients/Partners: carrusel de logos y aliados -->
-    <section class="bg-white crumina-module crumina-clients">
+        <!-- Clients/Partners: carrusel de logos y aliados -->
+        <!-- INICIO: Ajuste tamaños de logotipos del carrusel (+17%) -->
+        <style>
+            .crumina-clients .clients-item img,
+            .crumina-clients .slide img{
+                transform: scale(1.17);
+                transform-origin: center center;
+                transition: transform .14s ease-in-out;
+                display: inline-block;
+            }
+            .crumina-clients .clients-item { overflow: visible; }
+        </style>
+        <!-- FIN: Ajuste tamaños de logotipos del carrusel -->
+        <section class="bg-white crumina-module crumina-clients">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -244,23 +255,23 @@
     </section>
     
     <!-- Features / Cards: tarjetas de proyectos y rutas de aprendizaje -->
-    <section class="medium-padding100" style="background-image: url(/assets/img/academyweb/bg/geometric.png); background-repeat: no-repeat; background-size: cover;" >
+    <section class="medium-padding100 bokeh" style="background-image: url(/assets/img/academyweb/bg/geometric.png); background-repeat: no-repeat; background-size: cover;" >
         <div class="container">
             <div class="row mb60">
                 <div class="col col-xl-6 col-lg-6 m-auto col-md-12 col-sm-12 col-12">
                     <div class="crumina-module crumina-heading align-center">
-                        <div data-aos="fade" class="heading-sup-title"><span><strong>Four Boss Levels.</strong></span>
+                        <div data-aos="fade" class="heading-sup-title"><h2><strong>Four Boss Levels.</strong></h2>
                             <div class="my-4 mx-auto" style="width: 80px;"><img src="assets/img/academyweb/div-yellow.svg" alt="decorative divider amarillo" loading="lazy"></div>
                         </div>
-                        <h1 data-aos="fade-up" class="text-blue"><strong>&nbsp;Proyectos reales, resultados visibles.</strong></h1>
+                        <h5 data-aos="fade-up" class="text-blue"><strong>&nbsp;Proyectos reales, resultados visibles.</strong></h5>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-right" data-aos-delay="150">
-                    <div class="card rounded hvr-grow module-card" style="height: 100%;background: rgba(255,255,255,0);border: none; ">
+                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto  py-2" data-aos="fade-right" data-aos-delay="150">
+                    <div class="card  rounded hvr-grow module-card" style="height: 100%;background: rgba(255,255,255,0);border: none; ">
                         <div class="module-age">+7</div>
-                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(assets/img/academyweb/bg/graficos-de-acuarios-al-aire-libre-bajo-el-mar.jpg);background-size: cover;border-radius: 10px;
+                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(assets/img/academyweb/ccollege/cards/card-blue.png);background-size: cover;border-radius: 10px;
                         height: 100%;">
                             <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%204.svg" width="352" height="123" alt="Recurso 4" loading="lazy">
                                 <h2 class="mb-3" style="color: var(--white);"><strong>Explorando videojuegos</strong></h2>
@@ -269,18 +280,19 @@
                                 <div class="card-logos" aria-hidden="false">
                                     
                                     <img src="assets/img/steam/logos/roblox.png" alt="Roblox" loading="lazy">
-                                    <img src="assets/img/steam/logos/Lua-Logo.svg.png" alt="Roblox" loading="lazy">
+                                    
                                     <img src="assets/img/steam/logos/Python.png" alt="Python" loading="lazy">
                                     <img src="assets/img/academyweb/logos/Scratchlogo.svg.png" alt="Scratch" loading="lazy">
+                                    <img src="assets/img/steam/logos/Lua-Logo.svg.png" alt="Roblox" loading="lazy">
                                     <img src="assets/img/steam/logos/EducationEditionLogo.webp" alt="Arduino" loading="lazy">
-                                    <!-- INICIO: Enlace brochure (S3) - abre en nueva pestaña; intento de descarga por atributo `download` -->
-                                    <a class="btn btn-primary btn-md-2" href="https://s3.us-east-1.amazonaws.com/escoolar.co/drive/richard/academy-cc/GameExplorers.pdf" target="_blank" rel="noopener noreferrer" download aria-label="Descargar brochure GameExplorers en PDF">Descargar brochure (PDF)</a>
-                                    <a class="btn" href="game-explorers.html">Saber más</a>
-                                    <!-- FIN: Enlace brochure (S3) -->
+                                    
+                                    
+                                    <a class="btn btn-outline-primary" href="game-explorers.html">Saber más</a>
+                              
                                     
                                 </div></div>
                                 
-                                <a class="btn btn-outline-primary btn-md-2 role="button" style="margin-top: 15;" href="https://www.escoolar.com/academy-coding-registro">Inscríbete </a>
+                                <a class="btn btn-outline-primary btn-md-2 mt-3 role="button" style="margin-top: 15;" href="https://www.escoolar.com/academy-coding-registro">Inscríbete </a>
                                 
                                 </div>
                                 
@@ -289,29 +301,33 @@
                 <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="500">
                     <div class="card rounded hvr-grow module-card" style="height: 100%;background: rgba(255,255,255,0);border: none;">
                         <div class="module-age">+9</div>
-                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(assets/img/academyweb/bg/roblo1.png);background-size: cover;border-radius: 10px;
+                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(assets/img/academyweb/ccollege/cards/card-blue2.png);background-size: cover;border-radius: 10px;
                         height: 100%;">
                             <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%205.svg" alt="Recurso 5" loading="lazy">
                                 <h2 class="mb-3" style="color: var(--white);"><strong>Desarrollo de videojuego</strong></h2>
                                 <p style="color: var(--white);">Objetivo: Llevar ideas a&nbsp;juegos completos:&nbsp; eventos, colisiones, UI y&nbsp;publicación básica.<br><br> Herramientas: Roblox&nbsp;Studio (básico avanzado) y/o Godot (introducción).<br><br> Resultado: un juego&nbsp;3D/2D funcional con&nbsp;testeo y mejoras iterativas&nbsp;</p>
                                 <div class="card-logos" aria-hidden="false">
                                     <img src="assets/img/steam/logos/Logo_Blender.svg" alt="Blender" loading="lazy">
-                                    <img src="assets/img/steam/logos/Lua-Logo.svg.png" alt="Roblox" loading="lazy">
+                                    
                                     <img src="assets/img/steam/logos/roblox.png" alt="Roblox" loading="lazy">
                                     <img src="assets/img/steam/logos/Python.png" alt="Python" loading="lazy">
                                     
                                     <img src="assets/img/steam/logos/godot-logo.png" alt="Arduino" loading="lazy">
-                                    <a class="btn btn-primary btn-md-2" href="https://s3.us-east-1.amazonaws.com/escoolar.co/drive/richard/academy-cc/GameDev.pdf" target="_blank" rel="noopener noreferrer" download aria-label="Descargar brochure GameExplorers en PDF">Descargar brochure (PDF)</a>
+                                    <img src="assets/img/steam/logos/Lua-Logo.svg.png" alt="Roblox" loading="lazy">
+
+                                    <a class="btn btn-outline-primary" href="game-explorers.html">Saber más</a>
+                                 
+                                 
                                     
                                     
-                                </div></div><a class="btn btn-outline-primary btn-md-2" role="button" href="https://s3.us-east-1.amazonaws.com/escoolar.co/drive/richard/academy-cc/GameDev.pdf">Inscríbete</a>
+                                </div></div><a class="btn btn-outline-primary mt-3 btn-md-2" role="button" href="https://s3.us-east-1.amazonaws.com/escoolar.co/drive/richard/academy-cc/GameDev.pdf">Inscríbete</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="500">
                     <div class="card rounded hvr-grow module-card" style="height: 100%;background: rgba(255,255,255,0);border: none;">
                         <div class="module-age">+12</div>
-                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(assets/img/academyweb/bg/roblo-back.png);background-size: cover;border-radius: 10px;
+                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(assets/img/academyweb/ccollege/cards/card-blue3.png);background-size: cover;border-radius: 10px;
                         height: 100%;">
                             <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%206.svg" alt="Recurso 6" loading="lazy">
                                 <h2 class="mb-3" style="color: var(--white);"><strong>Desarrollo de videojuego</strong></h2>
@@ -320,7 +336,7 @@ fundamentos de Python
 para resolver problemas 
 y crear minijuegos/apps.<br><br> Herramientas:  Python, 
 editores tipo VS Code, 
-librerías iniciales.<br><br> Resultado: proyecto 
+librerías iniciales.<br> Resultado: proyecto 
 integrador en Python 
 con documentación y 
 pitch</p>
@@ -331,10 +347,10 @@ pitch</p>
                                     <img src="assets/img/steam/logos/Python.png" alt="Python" loading="lazy">
                                     <img src="assets/img/steam/logos/figma.png" alt="Scratch" loading="lazy">
                                     <img src="assets/img/steam/logos/pygame_logo.png" alt="Arduino" loading="lazy">
-                                    <!-- INICIO: Enlace brochure (S3) - CodeMaster -->
-                                     <a class="btn btn-primary btn-md-2" href="https://s3.us-east-1.amazonaws.com/escoolar.co/drive/richard/academy-cc/CodeMaster.pdf" target="_blank" rel="noopener noreferrer" download aria-label="Descargar brochure CodeMaster en PDF">Descargar brochure (PDF)</a>
-                                    <!-- FIN: Enlace brochure (S3) -->
-                                </div></div><a class="btn btn-outline-primary btn-md-2" role="button" href="https://www.escoolar.com/academy-coding-registro">Inscríbete</a>
+                                  
+                                    <a  class="btn btn-outline-primary" href="game-explorers.html">Saber más</a>
+                                 
+                                 </div></div><a class="btn btn-outline-primary mt-3 btn-md-2" role="button" href="https://s3.us-east-1.amazonaws.com/escoolar.co/drive/richard/academy-cc/GameDev.pdf">Inscríbete</a>
                         </div>
                     </div>
                 </div>
@@ -351,7 +367,7 @@ pitch</p>
                 <div class="col-12 col-lg-6">
                     <h3><strong>&nbsp;Ruta de creación.</strong></h3>
                     <div class="my-4" style="width: 150px;border-top: solid #2962ff 3px;"></div>
-                    <ol>
+                    <ol style="font-size: 0.9rem;">
                         <li>&nbsp;Micro-logros semanales: cada clase avanza una mecánica&nbsp;o función concreta.</li>
                         <li> Proyectos parciales por módulo.</li>
                         <li>Proyecto final por nivel.</li>
@@ -364,17 +380,17 @@ pitch</p>
         </div>
     </section>
     
-    <section class="medium-padding100" style="background-image: url(assets/img/academyweb/bg/back-cards.jpg); background-size: contain;
+    <section class="medium-padding100" style="background-image: url(assets/img/academyweb/bg/back-cards.jpg); 
     backdrop-filter: unset; 
-    background-color: #2962ff;">
+    background-color: #2962ff;
+    background-repeat: no-repeat;
+    background-size: cover;">
         <div class="container">
             
             <div class="row">
             
             <div class="row mt-4">
                 <div class="col-12">
-                    <!-- INICIO: Fourth card full-width (module)
-                         Propósito: tarjeta destacada que ocupa todo el ancho del bloque. Contiene logo, descripción y enlaces a brochure/registro. -->
                     <div  class="card rounded hvr-grow full-bleed-card module-card bg-image" style="background: rgba(255,255,255,0); border: none;">
                         
                         <div class="card-body p-4 d-flex flex-column" >
@@ -407,22 +423,13 @@ profesionalización</strong></h2>
     </section>
     
     
-    <section class="medium-padding180 bokeh" style="overflow: hidden;background: url(&quot;assets/img/academyweb/ccollege/back-grey.png&quot;) center / cover, #103aad;">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 style="text-align: center;color: var(--white);"><strong>De la idea al “lo hicimos”</strong></h1>
-                    <h3 class="text-white" data-aos="fade" data-aos-duration="900" data-aos-delay="150" style="text-align: center;z-index: 1;"><strong>&nbsp;Aquí es donde nace la magia: bloques, propiedades y código se&nbsp;</strong><br><strong>combinan para construir cada salto, moneda y checkpoint.&nbsp;</strong><br><strong>Aprenden probando, corrigiendo y volviendo a intentar.</strong><br><strong> El proyecto cobra vida: un obby fluido, desafiante y divertido. Se&nbsp;</strong><br><strong>juega, se comparte y se mejora con aportes de toda la clase. ¿La&nbsp;</strong><br><strong>mejor parte? Lo hicieron ellos.</strong></h3>
-                </div>
-            </div>
-        </div><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-    </section>
+    
     <section class="bg-white medium-padding100 bg-light" >
         <div class="container medium-padding100">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 offset-xxl-1 m-auto">
                     <div class="crumina-module crumina-heading" style="padding: 15px;">
-                        <h5 class="mb-3"><strong>Control parental</strong></h5>
+                        <h2 class="mb-3"><strong>Control parental</strong></h5>
                         <div class="my-4" style="width: 80px;"><img src="assets/img/academyweb/div-yellow.svg"></div>
                         <h2 class="heading-title c-primary"><strong>Ofrecemos orientación plena</strong></h2>
                         <p class="heading-text">Un panel único para ver el progreso, calificaciones, asistencia, comunicaciones en tiempo real, acceso a sala&nbsp;de exposiciones y mucho más. Visibilidad clara de todo lo que hacen sus hijos, con permisos ajustables.<br> Todo el panel está diseñado con una interfaz clara y móvil, para consultarlo desde el teléfono en segundos.</p>
@@ -438,13 +445,29 @@ profesionalización</strong></h2>
                 </div>
                 <div class="col-12 col-lg-6 d-flex align-items-center p-4"><img src="assets/img/academyweb/ccollege/panel.png"></div>
             </div>
+            
+        </div>
+    </section>
+
+<section class="medium-padding180 bokeh" style="overflow: hidden;background: url(&quot;assets/img/academyweb/ccollege/back-grey.png&quot;) center / cover, #103aad;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 style="text-align: center;color: var(--white);"><strong>De la idea al “lo hicimos”</strong></h1>
+                    <h3 class="text-white" data-aos="fade" data-aos-duration="900" data-aos-delay="150" style="text-align: center;z-index: 1;"><strong>&nbsp;Aquí es donde nace la magia: bloques, propiedades y código se&nbsp;</strong><br><strong>combinan para construir cada salto, moneda y checkpoint.&nbsp;</strong><br><strong>Aprenden probando, corrigiendo y volviendo a intentar.</strong><br><strong> El proyecto cobra vida: un obby fluido, desafiante y divertido. Se&nbsp;</strong><br><strong>juega, se comparte y se mejora con aportes de toda la clase. ¿La&nbsp;</strong><br><strong>mejor parte? Lo hicieron ellos.</strong></h3>
+                </div>
+            </div>
+        </div><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </section>
+    <section class="bg-white  bg-light" >
+        <div class="container medium-padding100">
             <div class="row pb30">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 m-auto">
                     <div class="crumina-module crumina-heading" style="padding: 15px;">
-                        <h5 class="text-center mb-3"><strong>&nbsp;Guía para acompañar</strong></h5>
+                        <h2 class="text-center mb-3"><strong>&nbsp;Guía para acompañar</strong></h5>
                         <div class="my-4 mx-auto" style="width: 80px;"><img src="assets/img/academyweb/div-yellow.svg"></div>
                         <h2 class="text-center heading-title"><strong>&nbsp;Charlas breves, prácticas y al grano para que acompañes a tus&nbsp;hijos con confianza.&nbsp;</strong></h2>
-                        <ol>
+                        <ol style="font-size: 0.9rem;">
                             <li>Controles parentales, paso a paso: cómo configurarlos en Roblox,&nbsp;Minecraft, consolas, móviles y PC (perfiles, límites, chats, compras).</li>
                             <li>Seguridad primero: privacidad, huella digital, convivencia online y&nbsp;qué alertas activar.</li>
                             <li>&nbsp;IA en la educación: ejemplos reales de inteligencia artificial que&nbsp;suman al estudio (búsquedas guiadas, ideas para proyectos,&nbsp;feedback) y cuándo decir “no”.</li>
@@ -457,12 +480,13 @@ profesionalización</strong></h2>
             </div>
         </div>
     </section>
+    
     <section class="medium-padding100">
         <div class="container">
             <div class="row">
                 <div class="col-2 d-flex justify-content-center align-items-center order-2 order-lg-1 p-5 mx-auto" data-aos="fade-right" data-aos-delay="300"><a data-bss-hover-animate="pulse" href="https://www.youtube.com/channel/UCJtPDofwONzvgxZX60HgM2A" alt="YouTube"><img src="assets/img/logos/youtubeescoolar.svg" style="min-width: 80px;"></a></div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 order-1 order-lg-2 m-auto" data-aos="zoom-in" data-aos-delay="150">
-                    <div style="/*background: url(&quot;assets/img/academyweb/ccollege/back3.jpg&quot;) center / cover;*/">
+                    <div>
                         <div class="overlay overlay-dark"></div><a class="btn btn-primary btn-lg d-flex with--icon btn-blue" role="button" style="border: none !important;background: url(&quot;assets/img/academyweb/ccollege/back3.jpg&quot;) center / cover;" href="https://www.instagram.com/plataformaescoolar/"><img class="icon" src="assets/img/logos/instagram.svg"><span class="text"><span class="text-white sup-title">Aprende algo nuevo</span><span class="text-white title">Síguenos en Instagram</span></span></a>
                     </div>
                 </div>
