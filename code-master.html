@@ -53,19 +53,22 @@
     <link rel="stylesheet" href="assets/css/tabordion.css">
     <link rel="stylesheet" href="assets/css/typewriter.css">
     <link rel="stylesheet" href="assets/css/bokeh.compiled.css">
-   
-    
+        <!-- INICIO: Ajustes header/hero añadidos (documentado) -->
+        <!-- Propósito: reducir el espacio entre header y hero en pantallas >=1200px
+             y ajustar el 'background-position' del hero para un mejor encuadre en pantallas grandes. -->
         <style>
-            @media (min-width: 1200px) {
+            @media (min-width: 800px) {
                 .header-spacer--standard { height: 70px !important; }
                 .hero { background-position: center 20% !important; }
+                
             }
-            p {font-size: calc(1em * 1.15) !important;line-height: 1.6 !important;
+            p {font-size: calc(1em * 1.25) !important;line-height: 1.6 !important;
 }
-
-
+            
         </style>
-       
+        <!-- FIN: Ajustes header/hero añadidos -->
+                <!-- INICIO: Overlay hero (oscurecer + tinte azul) -->
+                <!-- Propósito: mejorar contraste del texto sobre el video/imagen del hero mediante un pseudo-elemento. -->
                 <style>
                     .hero { position: relative; }
                     .hero::before {
@@ -78,7 +81,9 @@
                     }
                     .hero .container-fluid, .hero .container { position: relative; z-index: 2; }
                 </style>
-                
+                <!-- FIN: Overlay hero -->
+                <!-- INICIO: Helper CSS para logos dentro de las cards -->
+                <!-- Propósito: controlar tamaño, espaciado y aspecto de las imágenes de logos dentro de cada card. -->
                 <style>
                 .card-logos { display:flex; gap:10px; align-items:center; justify-content:flex-start; margin-top:12px; flex-wrap:wrap; }
                 .card-logos img { max-height:40px; opacity:0.98; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.35)); border-radius:6px; background: rgba(255,255,255,0.02); padding:6px; }
@@ -164,11 +169,13 @@
                         style="margin-bottom: 20px;"
                         loading="lazy">
 
+
                         <h5 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="2300" class="mb-4 ps-3" style="border-left: solid 20px #2962ff;color: var(--white); ">
                             
                         <strong>Aprende a programar creando&nbsp;tus propios videojuegos</strong></h5>
 
-                        <h1 class="display-3" data-aos="fade" data-aos-duration="1000" data-aos-delay="1500" style="color: var(--white);"><strong>Crear es aprender para siempre.</strong></h1>
+                        <h1 class="display-3" data-aos="fade" data-aos-duration="1000" data-aos-delay="1500" style="color: var(--white);"><strong> Jóvenes que aman Roblox y quieren pasar de 
+“jugar” a crear. </strong></h1>
                     </div>
                 </div>
             </div>
@@ -183,20 +190,8 @@
         </div>
     </section>
     <!-- FIN: Fourth card full-width -->
-        <!-- Clients/Partners: carrusel de logos y aliados -->
-        <!-- INICIO: Ajuste tamaños de logotipos del carrusel (+17%) -->
-        <style>
-            .crumina-clients .clients-item img,
-            .crumina-clients .slide img{
-                transform: scale(1.17);
-                transform-origin: center center;
-                transition: transform .14s ease-in-out;
-                display: inline-block;
-            }
-            .crumina-clients .clients-item { overflow: visible; }
-        </style>
-        <!-- FIN: Ajuste tamaños de logotipos del carrusel -->
-        <section class="bg-white crumina-module crumina-clients">
+    <!-- Clients/Partners: carrusel de logos y aliados -->
+    <section class="bg-white crumina-module crumina-clients">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -235,269 +230,192 @@
             </div>
         </div>
     </section>
-
-    <section class="medium-padding100" style="background: var(--bs-primary-text-emphasis);">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 d-flex align-items-center py-5" data-aos="fade-right" data-aos-delay="500" style="z-index: 1;">
-                    <div>
-                        <h1 class="text-light pb-4"><strong>Aprende a programar creando&nbsp;tus propios videojuegos</strong></h1>
-                        <div class="mb-4" style="width: 80px;"><img src="assets/img/academyweb/div-cyan.svg"></div>
-                        <div>
-                            <p class="text-white" style="line-height: 26px;">Academy Plus es una institución educativa de Estados Unidos (Miami, Florida) con sólida trayectoria y experiencia. Conectamos a niños y jóvenes con las habilidades del futuro a través de nuestras rutas en Primaria,&nbsp;<br>Secundaria, Preparatoria y Coding College. Enseñamos con proyectos reales, mentoría cercana y retos que&nbsp;inspiran. Nuestra misión es transformar curiosidad en confianza y talento en impacto. Aprender creando,&nbsp;mostrar con orgullo, crecer en comunidad.</p>
-                            <p class="text-white mb30" style="line-height: 26px;">&nbsp;Filosofía educativa: Aprender haciendo (project-based learning), resultados visibles desde la primera&nbsp;semana.&nbsp;</p><a class="btn btn-outline-primary btn-md-2" role="button" href="https://www.escoolar.com/academy-coding-registro">Conócenos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center d-flex justify-content-center align-items-center" data-aos="fade-right" style="z-index: 2;background: url(&quot;assets/img/academyweb/bgcuadro-01.svg&quot;);"><img data-bss-hover-animate="swing" class="shadow" src="assets/img/academyweb/ccollege/boy-1.png" style="max-height: 500px;border-radius: 3px;"></div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Features / Cards: tarjetas de proyectos y rutas de aprendizaje -->
-    <section class="medium-padding100 bokeh" style="background-image: url(/assets/img/academyweb/bg/geometric.png); background-repeat: no-repeat; background-size: cover;" >
+     <section class="medium-padding100">
         <div class="container">
             <div class="row mb60">
                 <div class="col col-xl-6 col-lg-6 m-auto col-md-12 col-sm-12 col-12">
-                    <div class="crumina-module crumina-heading align-center">
-                        <div data-aos="fade" class="heading-sup-title"><h2><strong>Four Boss Levels.</strong></h2>
-                            <div class="my-4 mx-auto" style="width: 80px;"><img src="assets/img/academyweb/div-yellow.svg" alt="decorative divider amarillo" loading="lazy"></div>
-                        </div>
-                        <h5 data-aos="fade-up" class="text-blue"><strong>&nbsp;Proyectos reales, resultados visibles.</strong></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto  py-2" data-aos="fade-right" data-aos-delay="150">
-                    <div class="card  rounded hvr-grow module-card" style="height: 100%;">
-                        <div class="module-age">+7</div>
-                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(assets/img/academyweb/ccollege/cards/card-blue.png);background-size: cover;border-radius: 10px;
-                        height: 100%;">
-                            <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%204.svg" width="352" height="123" alt="Recurso 4" loading="lazy">
-                                <h2 class="mb-3" style="color: var(--white);"><strong>Explorando videojuegos</strong></h2>
-                                <p style="color: var(--white);">Objetivo: encender la chispa: lógica básica, pensamiento computacional y diseño de juegos <br>sencillos.<br>Herramientas: Scratch, Minecraft Education y Roblox <br><br>Resultado: tu primer videojuego jugable y presentado a la familia.<br><br></p>
-                                
-                                <div class="card-logos" aria-hidden="false">
-                                    
-                                    <img src="assets/img/steam/logos/roblox.png" alt="Roblox" loading="lazy">
-                                    
-                                    <img src="assets/img/steam/logos/Python.png" alt="Python" loading="lazy">
-                                    <img src="assets/img/academyweb/logos/Scratchlogo.svg.png" alt="Scratch" loading="lazy">
-                                    <img src="assets/img/steam/logos/Lua-Logo.svg.png" alt="Roblox" loading="lazy">
-                                    <img src="assets/img/steam/logos/EducationEditionLogo.webp" alt="Arduino" loading="lazy">
-                                    
-                                    
-                                    <a class="btn btn-outline-primary" href="game-explorers.html">Saber más</a>
-                              
-                                    
-                                </div></div>
-                                
-                                <a class="btn btn-outline-primary btn-md-2 mt-3 role="button" style="margin-top: 15;" href="https://www.escoolar.com/academy-coding-registro">Inscríbete </a>
-                                
-                                </div>
-                                
-                    </div>
-                </div>
-                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card rounded hvr-grow module-card" style="height: 100%;background: rgba(255,255,255,0);border: none;">
-                        <div class="module-age">+9</div>
-                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(assets/img/academyweb/ccollege/cards/card-blue2.png);background-size: cover;border-radius: 10px;
-                        height: 100%;">
-                            <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%205.svg" alt="Recurso 5" loading="lazy">
-                                <h2 class="mb-3" style="color: var(--white);"><strong>Desarrollo de videojuego</strong></h2>
-                                <p style="color: var(--white);">Objetivo: Llevar ideas a&nbsp;juegos completos:&nbsp; eventos, colisiones, UI y&nbsp;publicación básica.<br><br> Herramientas: Roblox&nbsp;Studio (básico avanzado) y/o Godot (introducción).<br><br> Resultado: un juego&nbsp;3D/2D funcional con&nbsp;testeo y mejoras iterativas&nbsp;</p>
-                                <div class="card-logos" aria-hidden="false">
-                                    <img src="assets/img/steam/logos/Logo_Blender.svg" alt="Blender" loading="lazy">
-                                    
-                                    <img src="assets/img/steam/logos/roblox.png" alt="Roblox" loading="lazy">
-                                    <img src="assets/img/steam/logos/Python.png" alt="Python" loading="lazy">
-                                    
-                                    <img src="assets/img/steam/logos/godot-logo.png" alt="Arduino" loading="lazy">
-                                    <img src="assets/img/steam/logos/Lua-Logo.svg.png" alt="Roblox" loading="lazy">
-
-                                    <a class="btn btn-outline-primary" href="game-dev.html">Saber más</a>
-                                 
-                                 
-                                    
-                                    
-                                </div></div><a class="btn btn-outline-primary mt-3 btn-md-2" role="button" href="https://s3.us-east-1.amazonaws.com/escoolar.co/drive/richard/academy-cc/GameDev.pdf">Inscríbete</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card rounded hvr-grow module-card" style="height: 100%;background: rgba(255,255,255,0);border: none;">
-                        <div class="module-age">+12</div>
-                        <div class="card-body d-flex flex-column justify-content-between" style="background: url(assets/img/academyweb/ccollege/cards/card-blue3.png);background-size: cover;border-radius: 10px;
-                        height: 100%;">
-                            <div class="text-panel"><img class="my-3 hvr-push" src="assets/img/academyweb/logos/Recurso%206.svg" alt="Recurso 6" loading="lazy">
-                                <h2 class="mb-3" style="color: var(--white);"><strong>Desarrollo de videojuego</strong></h2>
-                                <p style="color: var(--white);">Objetivo: Dominar 
-fundamentos de Python 
-para resolver problemas 
-y crear minijuegos/apps.<br><br> Herramientas:  Python, 
-editores tipo VS Code, 
-librerías iniciales.<br> Resultado: proyecto 
-integrador en Python 
-con documentación y 
-pitch</p>
-                                <div class="card-logos" aria-hidden="false">
-                                    <img src="assets/img/steam/logos/Logo_Blender.svg" alt="Blender" loading="lazy">
-                                    <img src="assets/img/steam/logos/Lua-Logo.svg.png" alt="Roblox" loading="lazy">
-                                    <img src="assets/img/steam/logos/roblox.png" alt="Roblox" loading="lazy">
-                                    <img src="assets/img/steam/logos/Python.png" alt="Python" loading="lazy">
-                                    <img src="assets/img/steam/logos/figma.png" alt="Scratch" loading="lazy">
-                                    <img src="assets/img/steam/logos/pygame_logo.png" alt="Arduino" loading="lazy">
-                                  
-                                    <a  class="btn btn-outline-primary" href="code-master.html">Saber más</a>
-                                 
-                                 </div></div><a class="btn btn-outline-primary mt-3 btn-md-2" role="button" href="https://s3.us-east-1.amazonaws.com/escoolar.co/drive/richard/academy-cc/GameDev.pdf">Inscríbete</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            
-        </div>
-    </section>
-
-    <section class="medium-padding100" style="background: url(&quot;assets/img/bg-xl2.svg&quot;) top / cover repeat-y;">
-        <div class="container">
-            <div class="row rounded p-4 my-5">
-                <div class="col-12 col-lg-6 d-flex align-items-center p-1"><img src="assets/img/academyweb/ccollege/monitor1.png" "></div>
-                <div class="col-12 col-lg-6">
-                    <h3><strong>&nbsp;Ruta de creación.</strong></h3>
-                    <div class="my-4" style="width: 150px;border-top: solid #2962ff 3px;"></div>
-                    <ol style="font-size: 0.9rem;">
-                        <li>&nbsp;Micro-logros semanales: cada clase avanza una mecánica&nbsp;o función concreta.</li>
-                        <li> Proyectos parciales por módulo.</li>
-                        <li>Proyecto final por nivel.</li>
-                        <li>&nbsp;Playtesting y retroalimentación: prueban sus juegosentre pares, aprenden a recibir y dar feedback.</li>
-                        <li>&nbsp;Comunicación con familias: briefing de cierre por módulo y&nbsp;<br>Demo Day al finalizar el nivel.</li>
-                        <li>&nbsp;Evaluación por rúbricas: diseño, lógica, creatividad,&nbsp;presentación</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="medium-padding100" style="background-image: url(assets/img/academyweb/bg/back-cards.jpg); 
-    backdrop-filter: unset; 
-    background-color: #2962ff;
-    background-repeat: no-repeat;
-    background-size: cover;">
-        <div class="container">
-            
-            <div class="row">
-            
-            <div  class="row mt-4">
-                <div class="col-12">
-                    <div  class="card rounded hvr-grow full-bleed-card module-card bg-image" style="background: rgba(255,255,255,0); border: none;">
-                        
-                        <div class="card-body p-4 d-flex flex-column" >
-                            <div class="text-panel w-100">
-                                <div class="module-age">+13</div>
-                                <img class="my-3 hvr-push" src="assets/img/steam/logos/logo-next-level.png" alt="Logo del curso" loading="lazy" style="max-width: 250px;">
-                                <h2 class="mb-3"><strong>El salto a la 
-profesionalización</strong></h2>
-                                <p>El objetivo principal de este salto a la profesionalización es transformar la manera de desarrollar videojuegos, pasando de hacer proyectos en solitario a trabajar como en un estudio real. Para ello, nos centramos en cuatro pilares: aprender a crear prototipos rápidos para testear ideas sin perder tiempo, optimizar el juego para que vaya fluido, aprender a trabajar en equipo de manera eficiente y saber presentar nuestro trabajo a un "cliente" (o a cualquier persona) de forma clara y profesional.
-                                    <br><br>Herramientas: Para lograrlo, utilizamos un conjunto de herramientas esenciales en la industria. Usamos un motor de juego como Godot o Unity, que son como nuestros talleres principales, junto con Python para automatizar tareas.
-                                    <br><br>Resultado: El resultado final de todo este proceso es un "vertical slice" o porción jugable de alta calidad, que es como la carta de presentación de nuestro juego. No es un proyecto medio hecho, sino una demo pulida que muestra lo mejor de nuestra idea, con mecánicas completas, arte consistente y buen rendimiento.</p>
-                                <div class="card-logos mt-3" aria-hidden="false">
-                                    <img src="assets/img/steam/logos/Logo_Blender.svg" alt="Blender" loading="lazy">
-                                    <img src="assets/img/steam/logos/c-programming-language-logo-microsoft-visual-studio-net-framework-png-favpng-WLLTMqZhSPAk9q3DTh993fZnh.png" alt="Roblox" loading="lazy">
-                                    <img src="assets/img/steam/logos/Python.png" alt="Python" loading="lazy">
-                                    <img src="assets/img/steam/logos/Unity.png" alt="Scratch" loading="lazy">
-                                    <img src="assets/img/steam/logos/Recurso-32.png" alt="Arduino" loading="lazy">
-                                    
-                                     <a class="btn btn-outline-primary btn-md-2" role="button" href="https://www.escoolar.com/academy-coding-registro">Inscríbete</a>
-                                </div>
+                    <div class="crumina-module crumina-heading align-center"><a href="recursos.html">
+                            <div data-aos="fade" class="heading-sup-title"><a href="recursos.html"><h2>Code Master</h2></a>
+                                <div class="my-4 mx-auto" style="width: 80px;"><img src="assets/img/academyweb/div-yellow.svg"></div>
                             </div>
-                            <div class="mt-3 mt-md-0">
-                                
+                        </a>
+                         <h5 data-aos="fade-up" class="text-blue mb-4"><strong>De jugadores a creadores</strong></h5>
+                      
+                        <p data-aos="fade-up">&nbsp;En Game Explorer de Academy Coding College, los alumnos dan un gran salto, dejan de ser jugadores pasivos y se convierten en creadores de mundos virtuales. Con Roblox Studio, aprenden a construir escenarios&nbsp;<br>en 3D, programar mecánicas con Lua y publicar juegos que pueden compartir con sus amigos. Además,&nbsp;refuerzan la lógica con Godot y se inician en Python, el lenguaje más usado en el mundo de la tecnología.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up">
+                    <div class="card rounded hvr-grow" style="border-top: 5px solid #00e5ff;height: 100%;">
+                        <div class="card-header p-0"><img src="assets/img/academyweb/ccollege/cards/roblox-card.png" style="width: 100%;"></div>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <h3>Roblox Studio</h3>
+                                <p class="mt-3">Roblox Studio La plataforma&nbsp;global donde millones de&nbsp;jóvenes publican sus juegos.&nbsp;<br>Aquí los alumnos crean sus&nbsp;primeras experiencias en 3D&nbsp;y aprenden Lua scripting.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    <section class="bg-white medium-padding100 bg-light" >
-        <div class="container medium-padding100">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 offset-xxl-1 m-auto">
-                    <div class="crumina-module crumina-heading" style="padding: 15px;">
-
-                       
-
-                        <h2 class="mb-3"><strong>Control parental</strong></h5>
-                        <div class="my-4" style="width: 80px;"><img src="assets/img/academyweb/div-yellow.svg"></div>
-                        <h5 data-aos="fade-up" class="text-blue"><strong>&nbsp;Ofrecemos orientación plena</strong></h5>
-                       
-                        <p class="heading-text">Un panel único para ver el progreso, calificaciones, asistencia, comunicaciones en tiempo real, acceso a sala&nbsp;de exposiciones y mucho más. Visibilidad clara de todo lo que hacen sus hijos, con permisos ajustables.<br> Todo el panel está diseñado con una interfaz clara y móvil, para consultarlo desde el teléfono en segundos.</p>
-                        <ol>
-                            <li>&nbsp;Configuración personalizada (alertas, reportes, frecuencia&nbsp;y nivel de detalle).</li>
-                            <li>&nbsp;Privacidad de datos: uso académico exclusivamente;&nbsp;cumplimos estándares de seguridad y buenas prácticas.&nbsp;</li>
-                            <li>Ambientes moderados: aulas virtuales y foros con normas&nbsp;claras y supervisión docente, moderadores y especialistas.</li>
-                            <li>&nbsp;Tranquilidad: sabes qué hacen tus hijos y cómo progresan,&nbsp;Comunicación directa: un solo lugar para hablar con el equipo&nbsp;y resolver rápido.</li>
-                            <li>&nbsp;Evidencia de progreso: proyectos, evaluaciones y logros&nbsp;visibles, descargables y compartibles.</li>
-                        </ol>
-                        <p class="lead heading-text mb30">&nbsp;Hábitos saludables: acordamos tiempos, objetivos y descansos&nbsp;<br>con criterio pedagógico.</p>
+                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card rounded hvr-grow" style="border-top: 5px solid #ffbb00;height: 100%;">
+                        <div class="card-header p-0"><img src="assets/img/academyweb/ccollege/cards/godot-card.png" style="width: 100%;"></div>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div><h3>Godot Engine</h3>
+                                <p class="mt-3">Godot es un motor de código&nbsp;abierto para crear juegos&nbsp;2D/3D con un editor visual y&nbsp;<br>GDScript. Ideal para aprender&nbsp;rápido, prototipar y exportar a&nbsp;PC, web y móvil</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 d-flex align-items-center p-4"><img src="assets/img/academyweb/ccollege/panel.png"></div>
-            </div>
-            
-        </div>
-    </section>
-
-<section class="medium-padding180 bokeh" style="overflow: hidden;background: url(&quot;assets/img/academyweb/ccollege/back-grey.png&quot;) center / cover, #103aad;">
-        <div class="container">
-            <div class="row">
+                <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card rounded hvr-grow" style="border-top: 5px solid #ff6d00;height: 100%;">
+                        <div class="card-header p-0"><img src="assets/img/academyweb/ccollege/cards/phyton-card.png" style="width: 100%;"></div>
+                        <div class="card-body d-flex flex-column  justify-content-between">
+                            <div><h3>Phyton</h3>
+                                <p class="mt-3">&nbsp;Python&nbsp;Lenguaje profesional, usado por Google, Netflix&nbsp;y miles de empresas tecnoló<br>gicas. Los alumnos tienen aquí su primer contacto real&nbsp;con código escrito.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col">
-                    <h1 style="text-align: center;color: var(--white);"><strong>De la idea al “lo hicimos”</strong></h1>
-                    <h3 class="text-white" data-aos="fade" data-aos-duration="900" data-aos-delay="150" style="text-align: center;z-index: 1;"><strong>&nbsp;Aquí es donde nace la magia: bloques, propiedades y código se&nbsp;</strong><br><strong>combinan para construir cada salto, moneda y checkpoint.&nbsp;</strong><br><strong>Aprenden probando, corrigiendo y volviendo a intentar.</strong><br><strong> El proyecto cobra vida: un obby fluido, desafiante y divertido. Se&nbsp;</strong><br><strong>juega, se comparte y se mejora con aportes de toda la clase. ¿La&nbsp;</strong><br><strong>mejor parte? Lo hicieron ellos.</strong></h3>
-                </div>
-            </div>
-        </div><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-    </section>
-    <section class="bg-white  bg-light" >
-        <div class="container medium-padding100">
-            <div class="row pb30">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 m-auto">
-                    <div class="crumina-module crumina-heading" style="padding: 15px;">
-                        <h2 class="text-center mb-3"><strong>&nbsp;Guía para acompañar</strong></h5>
-                        <div class="my-4 mx-auto" style="width: 80px;"><img src="assets/img/academyweb/div-yellow.svg"></div>
-                        <h5 data-aos="fade-up" class="text-blue mb-4"><strong>&nbsp;Charlas breves, prácticas y al grano para que acompañes a tus&nbsp;hijos con confianza</strong></h5>
-                        
-                        <ol style="font-size: 0.9rem;">
-                            <li>Controles parentales, paso a paso: cómo configurarlos en Roblox,&nbsp;Minecraft, consolas, móviles y PC (perfiles, límites, chats, compras).</li>
-                            <li>Seguridad primero: privacidad, huella digital, convivencia online y&nbsp;qué alertas activar.</li>
-                            <li>&nbsp;IA en la educación: ejemplos reales de inteligencia artificial que&nbsp;suman al estudio (búsquedas guiadas, ideas para proyectos,&nbsp;feedback) y cuándo decir “no”.</li>
-                            <li>&nbsp;Hábitos sanos: tiempos de pantalla, pausas, ergonomía y acuerdos&nbsp;familiares.</li>
-                        </ol>
-                        <p class="text-center">&nbsp;Acompañar es estar cerca. Nosotros ponemos&nbsp;la ruta y las herramientas; tu, el mejor impulso.&nbsp;<br>¿Nos acompañás?</p>
-                        <p class="text-center"></p>
+                    <div class="pt-3">
+                        <p data-aos="fade-up">&nbsp;Para la vida real, pensamiento lógico y matemático. Aprenden a&nbsp;ordenar instrucciones y diseñar sistemas que funcionan.&nbsp;Creatividad aplicada, pasan de imaginar un mundo a programarlo&nbsp;y verlo jugable. Confianza y motivación, publican sus propios&nbsp;juegos en Roblox y los comparten con amigos. Preparación&nbsp;académica, introducción a Python como base para futuros&nbsp;lenguajes de programación. Habilidades de comunicación y&nbsp;liderazgo, trabajan en equipo y presentan sus proyectos.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
     <section class="medium-padding100">
-        <div class="container">
-            <div class="row">
-                <div class="col-2 d-flex justify-content-center align-items-center order-2 order-lg-1 p-5 mx-auto" data-aos="fade-right" data-aos-delay="300"><a data-bss-hover-animate="pulse" href="https://www.youtube.com/channel/UCJtPDofwONzvgxZX60HgM2A" alt="YouTube"><img src="assets/img/logos/youtubeescoolar.svg" style="min-width: 80px;"></a></div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 order-1 order-lg-2 m-auto" data-aos="zoom-in" data-aos-delay="150">
+        <div class="container rounded">
+            <div class="row rounded p-4">
+                <div class="col-12 col-lg-6">
+                    <h3 class="mb-0" style="font-weight: 400 !important;">Programa semestral</h3>
+                    <h3>Nivel inicial</h3>
+                    <div class="my-4" style="width: 150px;border-top: solid #2962ff 3px;"></div>
+                    <p class="lead">Clase de introducción</p>
+                    <ol>
+                        <li>¿Qué es programar?</li>
+                        <li>Pensamiento computacional</li>
+                        <li>Conocer Scratch por primera vez</li>
+                        <li>Primeros movimientos del sprite</li>
+                        <li>Eventos básicos: “Cuando hago esto, pasa esto”</li>
+                        <li>Mini-experimento</li>
+                        <li>Presentación del proyecto del módulo</li>
+                    </ol>
+                    <p class="lead mt-4">Cada módulo</p>
                     <div>
-                        <div class="overlay overlay-dark"></div><a class="btn btn-primary btn-lg d-flex with--icon btn-blue" role="button" style="border: none !important;background: url(&quot;assets/img/academyweb/ccollege/back3.jpg&quot;) center / cover;" href="https://www.instagram.com/plataformaescoolar/"><img class="icon" src="assets/img/logos/instagram.svg"><span class="text"><span class="text-white sup-title">Aprende algo nuevo</span><span class="text-white title">Síguenos en Instagram</span></span></a>
+                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;" src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>Cada nivel con cuatro módulos</strong></p>
+                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;" src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>8 clases por módulo</strong></p>
+                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;" src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>48 horas de clase en vivo</strong></p>
+                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;" src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>32 horas de clase en vivo con instructor por módulo</strong></p>
+                    </div>
+                    <div class="accordion mt-4" role="tablist" id="accordion-2">
+                        <div class="accordion-item bg-light rounded">
+                            <h2 class="accordion-header mb-0" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="false" aria-controls="accordion-2 .item-1">Módulo 1 -<strong>Scratch Básico</strong></button></h2>
+                            <div class="accordion-collapse collapse item-1 bg-white" role="tabpanel" data-bs-parent="#accordion-2">
+                                <div class="accordion-body">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col py-3">
+                                                <ol>
+                                                    <li>&nbsp;¿Qué es programar? Pensamiento computacional </li>
+                                                    <li>&nbsp;Interfaz de Scratch (escenarios, sprites,bloques) </li>
+                                                    <li> Movimientos y secuencias </li>
+                                                    <li> Eventos básicos (bandera/teclas </li>
+                                                    <li> Bucles simples</li>
+                                                    <li> Animaciones y sonidos</li>
+                                                    <li> Diseño del mini-juego</li>
+                                                    <li>Proyecto parcial: Mini-juego de persecución</li>
+                                                    <li>&nbsp;Proyecto del módulo: Mini-juego de persecución en&nbsp;<br>Scratch.</li>
+                                                    <li>Habilidades clave: Atención, resolución de problemas,&nbsp;<br>confianza (“¡yo puedo!”).</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-light rounded">
+                            <h2 class="accordion-header mb-0" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-2" aria-expanded="false" aria-controls="accordion-2 .item-2">Módulo 2 - <strong>Scratch Avanzado</strong></button></h2>
+                            <div class="accordion-collapse collapse item-2 bg-white" role="tabpanel" data-bs-parent="#accordion-2">
+                                <div class="accordion-body">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col py-3">
+                                                <ol>
+                                                    <li> Variables: puntos y vidas</li>
+                                                    <li>Condicionales (si/entonces)</li>
+                                                    <li> Pantallas múltiples y niveles</li>
+                                                    <li> Clones (enemigos/ítems)</li>
+                                                    <li> Cronómetro y contrarreloj</li>
+                                                    <li> Gráficos/sonidos mejorados</li>
+                                                    <li>Dificultad progresiva</li>
+                                                    <li>Proyecto parcial: Juego arcade completo</li>
+                                                    <li>Proyecto del módulo: Arcade con niveles y puntaje.Habilidades clave: Planear, construir, probar, mejorar&nbsp;(iteración).</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-light rounded">
+                            <h2 class="accordion-header mb-0" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-3" aria-expanded="false" aria-controls="accordion-2 .item-3">Módulo 3 - <strong>Minecraft + Roblox Intro</strong></button></h2>
+                            <div class="accordion-collapse collapse item-3 bg-white" role="tabpanel" data-bs-parent="#accordion-2">
+                                <div class="accordion-body">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col py-3">
+                                                <ol>
+                                                    <li>Minecraft Education: introducción</li>
+                                                    <li> Comandos y bloques de código</li>
+                                                    <li>Automatizaciones simples</li>
+                                                    <li> Reto de construcción guiado</li>
+                                                    <li>Roblox Studio: introducción</li>
+                                                    <li> Interfaz y objetos 3D</li>
+                                                    <li> Diseño de un obby simple</li>
+                                                    <li>&nbsp;Proyecto parcial: Construcción automatizada +&nbsp;obby básico</li>
+                                                    <li>&nbsp;Proyecto del módulo: Construcción automatizada +&nbsp;obby simple publicado.</li>
+                                                    <li>&nbsp;Habilidades clave: Espacio 3D, colaboración y pensamiento creativo aplicado.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-light rounded">
+                            <h2 class="accordion-header mb-0" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-4" aria-expanded="false" aria-controls="accordion-2 .item-4">Módulo&nbsp;4 - <strong>Integración y Final</strong></button></h2>
+                            <div class="accordion-collapse collapse item-4 bg-white" role="tabpanel" data-bs-parent="#accordion-2">
+                                <div class="accordion-body">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col py-3">
+                                                <ol>
+                                                    <li> Repaso de conceptos </li>
+                                                    <li> Ideación del juego final </li>
+                                                    <li>Desarrollo (fase 1)</li>
+                                                    <li> Desarrollo (fase 2)</li>
+                                                    <li> Playtesting</li>
+                                                    <li>Pulido final</li>
+                                                    <li> Presentación (demo)</li>
+                                                    <li>&nbsp;Proyecto final: Videojuego en Scratch +&nbsp;reto jugable en Roblox/Minecraft</li>
+                                                    <li>Proyecto del módulo: Juego final en Scratch +&nbsp;mini-reto en Roblox/Minecraft.</li>
+                                                    <li>Habilidades clave: Autonomía, trabajo en equipo,&nbsp;orgullo por el logro y portafolio inicial.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-2 d-flex justify-content-center align-items-center order-3 order-lg-3 p-5 mx-auto" data-aos="fade-left" data-aos-delay="300"><a data-bss-hover-animate="pulse" href="https://www.facebook.com/escoolar/" alt="Facebook"><img src="assets/img/logos/facebookescoolar.svg" style="min-width: 80px;"></a></div>
+                <div class="col-12 col-lg-4 d-flex align-items-center mx-auto"><img src="assets/img/academyweb/ccollege/boy-1.png"></div>
             </div>
         </div>
+    </section>
+
     
     <!-- Modal: formulario de inicio de sesión -->
     <div class="modal fade" role="dialog" tabindex="-1" id="login" aria-labelledby="login" aria-hidden="true">
