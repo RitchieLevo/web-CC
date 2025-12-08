@@ -11,7 +11,7 @@
         gtag('js', new Date());
 
         gtag('config', 'AW-17293324714');
-    </script>    
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Coding College | Tu escuela en simples pasos</title>
     <meta name="twitter:description" content="Tu escuela digital en simples pasos">
@@ -53,64 +53,122 @@
     <link rel="stylesheet" href="assets/css/tabordion.css">
     <link rel="stylesheet" href="assets/css/typewriter.css">
     <link rel="stylesheet" href="assets/css/bokeh.compiled.css">
-        <!-- INICIO: Ajustes header/hero añadidos (documentado) -->
-        <!-- Propósito: reducir el espacio entre header y hero en pantallas >=1200px
+    <!-- INICIO: Ajustes header/hero añadidos (documentado) -->
+    <!-- Propósito: reducir el espacio entre header y hero en pantallas >=1200px
              y ajustar el 'background-position' del hero para un mejor encuadre en pantallas grandes. -->
-        <style>
-            @media (min-width: 800px) {
-                .header-spacer--standard { height: 70px !important; }
-                .hero { background-position: center 20% !important; }
-                
+    <style>
+        @media (min-width: 800px) {
+            .header-spacer--standard {
+                height: 70px !important;
             }
-            p {font-size: calc(1em * 1.25) !important;line-height: 1.6 !important;
-}
-            
-        </style>
-        <!-- FIN: Ajustes header/hero añadidos -->
-                <!-- INICIO: Overlay hero (oscurecer + tinte azul) -->
-                <!-- Propósito: mejorar contraste del texto sobre el video/imagen del hero mediante un pseudo-elemento. -->
-                <style>
-                    .hero { position: relative; }
-                    .hero::before {
-                        content: '';
-                        position: absolute;
-                        inset: 0;
-                        background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.35)), rgba(41,98,255,0.08);
-                        pointer-events: none;
-                        z-index: 1;
-                    }
-                    .hero .container-fluid, .hero .container { position: relative; z-index: 2; }
-                </style>
-                <!-- FIN: Overlay hero -->
-                <!-- INICIO: Helper CSS para logos dentro de las cards -->
-                <!-- Propósito: controlar tamaño, espaciado y aspecto de las imágenes de logos dentro de cada card. -->
-                <style>
-                .card-logos { display:flex; gap:10px; align-items:center; justify-content:flex-start; margin-top:12px; flex-wrap:wrap; }
-                .card-logos img { max-height:40px; opacity:0.98; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.35)); border-radius:6px; background: rgba(255,255,255,0.02); padding:6px; }
-                @media (max-width:768px) { .card-logos img{ max-height:28px; padding:4px } .card-logos { gap:8px } }
-                </style>
-                <!-- FIN: Helper CSS para logos -->
-                <!-- INICIO: Estilos .text-panel (panel oscuro para títulos y párrafos) -->
-                <!-- Propósito: proporcionar un fondo oscuro, padding y sombras para mejorar legibilidad sobre fondos complejos. -->
-                <style>
-                .text-panel {
-                    background: linear-gradient(180deg, rgba(2,6,23,0.78), rgba(8, 12, 28, 0.685));
-                    padding: 18px 20px;
-                    border-radius: 0 0 15px 15px;
-                    box-shadow: 0 10px 30px rgba(2,6,23,0.6), 0 0 18px rgba(41,98,255,0.06) inset;
-                    border: 1px solid rgba(41,98,255,0.06);
-                    color: #ffffff;
-                    backdrop-filter: blur(4px);
-                }
-                .text-panel h2 { color: #fff !important; text-shadow: 0 3px 18px rgba(0,0,0,0.6); }
-                .text-panel p { color: rgba(255,255,255,0.92); line-height: 1.45; }
-                .text-panel .btn { margin-top: 12px; }
-                @media (max-width: 768px) {
-                    .text-panel { padding: 14px 16px; border-radius: 10px; }
-                    .text-panel h2 { font-size: 1.25rem; }
-                }
-                </style>
-                <!-- FIN: Estilos .text-panel -->
+
+            .hero {
+                background-position: center 20% !important;
+            }
+
+        }
+
+        p {
+            font-size: calc(1em * 1.25) !important;
+            line-height: 1.6 !important;
+        }
+    </style>
+    <!-- FIN: Ajustes header/hero añadidos -->
+    <!-- INICIO: Overlay hero (oscurecer + tinte azul) -->
+    <!-- Propósito: mejorar contraste del texto sobre el video/imagen del hero mediante un pseudo-elemento. -->
+    <style>
+        .hero {
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35)), rgba(41, 98, 255, 0.08);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero .container-fluid,
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+    <!-- FIN: Overlay hero -->
+    <!-- INICIO: Helper CSS para logos dentro de las cards -->
+    <!-- Propósito: controlar tamaño, espaciado y aspecto de las imágenes de logos dentro de cada card. -->
+    <style>
+        .card-logos {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .card-logos img {
+            max-height: 40px;
+            opacity: 0.98;
+            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 6px;
+        }
+
+        @media (max-width:768px) {
+            .card-logos img {
+                max-height: 28px;
+                padding: 4px
+            }
+
+            .card-logos {
+                gap: 8px
+            }
+        }
+    </style>
+    <!-- FIN: Helper CSS para logos -->
+    <!-- INICIO: Estilos .text-panel (panel oscuro para títulos y párrafos) -->
+    <!-- Propósito: proporcionar un fondo oscuro, padding y sombras para mejorar legibilidad sobre fondos complejos. -->
+    <style>
+        .text-panel {
+            background: linear-gradient(180deg, rgba(2, 6, 23, 0.78), rgba(8, 12, 28, 0.685));
+            padding: 18px 20px;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6), 0 0 18px rgba(41, 98, 255, 0.06) inset;
+            border: 1px solid rgba(41, 98, 255, 0.06);
+            color: #ffffff;
+            backdrop-filter: blur(4px);
+        }
+
+        .text-panel h2 {
+            color: #fff !important;
+            text-shadow: 0 3px 18px rgba(0, 0, 0, 0.6);
+        }
+
+        .text-panel p {
+            color: rgba(255, 255, 255, 0.92);
+            line-height: 1.45;
+        }
+
+        .text-panel .btn {
+            margin-top: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .text-panel {
+                padding: 14px 16px;
+                border-radius: 10px;
+            }
+
+            .text-panel h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+    <!-- FIN: Estilos .text-panel -->
 </head>
 
 <body>
@@ -118,69 +176,109 @@
     <div id="header--standard" class="header--standard header--standard-dark" style="left: 0 !important;">
         <div class="container-fluid">
             <div class="header--standard-wrap"><a class="logo" href="index.html">
-                    <div class="img-wrap"><img class="py-2" src="assets/img/logos/academy-01.svg" alt="escoolar.com" width="220 px"></div>
-                </a><a class="open-responsive-menu js-open-responsive-menu" href="#"><svg class="olymp-menu-icon"><use xlink:href="assets/img/svg-icons/sprites/icons.svg#olymp-menu-icon"></use></svg></a>
+                    <div class="img-wrap"><img class="py-2" src="assets/img/logos/academy-01.svg" alt="escoolar.com"
+                            width="220 px"></div>
+                </a><a class="open-responsive-menu js-open-responsive-menu" href="#"><svg class="olymp-menu-icon">
+                        <use xlink:href="assets/img/svg-icons/sprites/icons.svg#olymp-menu-icon"></use>
+                    </svg></a>
                 <div class="nav nav-pills nav1 header-menu">
                     <div class="mCustomScrollbar">
                         <ul>
-                            <li class="nav-item dropdown"><a class="link-light nav-link dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="false" aria-expanded="false" data-toggle="dropdown" href="#" tabindex="1">Servicios</a>
-                                <div class="dropdown-menu"><a class="dropdown-item" href="academy-primaria.html" style="font-family: omnespro;font-weight: 500 !important;">Primaria en línea</a><a class="dropdown-item" href="academy-secundaria.html" style="font-family: omnespro;font-weight: 500 !important;">Secundaria en línea</a><a class="dropdown-item" href="academy-preparatoria.html" style="font-family: omnespro;font-weight: 500 !important;">Preparatoria en línea</a><a class="dropdown-item" href="coding.html" style="font-family: omnespro;font-weight: 500 !important;">Coding College</a></div>
+                            <li class="nav-item dropdown"><a class="link-light nav-link dropdown-toggle"
+                                    data-hover="dropdown" role="button" aria-haspopup="false" aria-expanded="false"
+                                    data-toggle="dropdown" href="#" tabindex="1">Servicios</a>
+                                <div class="dropdown-menu"><a class="dropdown-item" href="academy-primaria.html"
+                                        style="font-family: omnespro;font-weight: 500 !important;">Primaria en
+                                        línea</a><a class="dropdown-item" href="academy-secundaria.html"
+                                        style="font-family: omnespro;font-weight: 500 !important;">Secundaria en
+                                        línea</a><a class="dropdown-item" href="academy-preparatoria.html"
+                                        style="font-family: omnespro;font-weight: 500 !important;">Preparatoria en
+                                        línea</a><a class="dropdown-item" href="coding.html"
+                                        style="font-family: omnespro;font-weight: 500 !important;">Coding College</a>
+                                </div>
                             </li>
-                            <li class="nav-item dropdown"><a class="link-light nav-link dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="false" aria-expanded="false" data-toggle="dropdown" href="#" tabindex="1">Método</a>
-                                <div class="dropdown-menu"><a class="dropdown-item" href="acercamiento.html">Acercamiento</a><a class="dropdown-item" href="acreditacion.html">Acreditación</a><a class="dropdown-item" href="curricula.html">Currícula</a><a class="dropdown-item" href="social.html">Socialización</a><a class="dropdown-item" href="padres.html">Participación de los padres</a></div>
+                            <li class="nav-item dropdown"><a class="link-light nav-link dropdown-toggle"
+                                    data-hover="dropdown" role="button" aria-haspopup="false" aria-expanded="false"
+                                    data-toggle="dropdown" href="#" tabindex="1">Método</a>
+                                <div class="dropdown-menu"><a class="dropdown-item"
+                                        href="acercamiento.html">Acercamiento</a><a class="dropdown-item"
+                                        href="acreditacion.html">Acreditación</a><a class="dropdown-item"
+                                        href="curricula.html">Currícula</a><a class="dropdown-item"
+                                        href="social.html">Socialización</a><a class="dropdown-item"
+                                        href="padres.html">Participación de los padres</a></div>
                             </li>
-                            <li class="nav-item dropdown"><a class="link-light nav-link dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="false" aria-expanded="false" data-toggle="dropdown" href="#" tabindex="1">Nosotros</a>
-                                <div class="dropdown-menu"><a class="dropdown-item" href="conocenos.html">Conócenos</a><a class="dropdown-item" href="formula.html">Fórmula</a></div>
+                            <li class="nav-item dropdown"><a class="link-light nav-link dropdown-toggle"
+                                    data-hover="dropdown" role="button" aria-haspopup="false" aria-expanded="false"
+                                    data-toggle="dropdown" href="#" tabindex="1">Nosotros</a>
+                                <div class="dropdown-menu"><a class="dropdown-item"
+                                        href="conocenos.html">Conócenos</a><a class="dropdown-item"
+                                        href="formula.html">Fórmula</a></div>
                             </li>
                             <li class="nav-item"><a href="horarios.html">Horarios de clase</a></li>
                             <li class="nav-item"><a href="recursos.html">Recursos</a></li>
                             <li class="nav-item"><a href="precio.html">Precios</a></li>
-                            <li class="nav-item p-1"><a class="btn btn-outline-primary m-0" role="button" style="min-width: 150px;padding-top: 12px;padding-bottom: 12px;max-width: 150px;color: #fff;" href="academy-login.html">Iniciar sesión</a></li>
-                            <li class="nav-item p-1"><a class="btn btn-primary m-0" role="button" style="min-width: 150px;padding-top: 12px;padding-bottom: 12px;max-width: 150px;color: #fff;" href="preregistro.html">Pre-registro</a></li>
+                            <li class="nav-item p-1"><a class="btn btn-outline-primary m-0" role="button"
+                                    style="min-width: 150px;padding-top: 12px;padding-bottom: 12px;max-width: 150px;color: #fff;"
+                                    href="academy-login.html">Iniciar sesión</a></li>
+                            <li class="nav-item p-1"><a class="btn btn-primary m-0" role="button"
+                                    style="min-width: 150px;padding-top: 12px;padding-bottom: 12px;max-width: 150px;color: #fff;"
+                                    href="preregistro.html">Pre-registro</a></li>
                             <li class="nav-item dropdown pl-3">
-                                <a class="link-light nav-link dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="false" aria-expanded="false" data-toggle="dropdown" href="#" tabindex="1"><i class="fa fa-lg fa-language"></i></a>
+                                <a class="link-light nav-link dropdown-toggle" data-hover="dropdown" role="button"
+                                    aria-haspopup="false" aria-expanded="false" data-toggle="dropdown" href="#"
+                                    tabindex="1"><i class="fa fa-lg fa-language"></i></a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="index.html" style="font-family: omnespro;font-weight: 500 !important;">Español</a>
-                                    <a class="dropdown-item" href="index-en.html" style="font-family: omnespro;font-weight: 500 !important;">Inglés</a>
+                                    <a class="dropdown-item" href="index.html"
+                                        style="font-family: omnespro;font-weight: 500 !important;">Español</a>
+                                    <a class="dropdown-item" href="index-en.html"
+                                        style="font-family: omnespro;font-weight: 500 !important;">Inglés</a>
                                 </div>
                             </li>
-                            <li class="close-responsive-menu js-close-responsive-menu"><svg class="olymp-close-icon"><use xlink:href="assets/img/svg-icons/sprites/icons.svg#olymp-close-icon"></use></svg></li>
+                            <li class="close-responsive-menu js-close-responsive-menu"><svg class="olymp-close-icon">
+                                    <use xlink:href="assets/img/svg-icons/sprites/icons.svg#olymp-close-icon"></use>
+                                </svg></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
     <div class="header-spacer--standard"></div>
     <!-- Hero: sección principal con imagen de fondo, título y CTA -->
     <section class="d-flex align-items-center medium-padding120 hero">
-        
+
         <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
-            <source src="https://s3.us-east-1.amazonaws.com/escoolar.co/drive/richard/academy-cc/Godot-make.mp4" type="video/mp4">
+            <source src="https://s3.us-east-1.amazonaws.com/escoolar.co/drive/richard/academy-cc/godot-back.mp4"
+                type="video/mp4">
         </video>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container-fluid ">
             <div class="row d-flex">
-                <div class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-6 col-xxl-4 offset-xl-1 d-flex flex-column justify-content-center">
+                <div
+                    class="col-12 col-sm-10 col-md-6 col-lg-6 col-xl-6 col-xxl-4 offset-xl-1 d-flex flex-column justify-content-center">
                     <div>
-                        
-                        <img src="assets/img/academyweb/logos/logotipo-cc.svg" width="250px" height="40" alt="Logo Campuus"
-                        style="margin-bottom: 20px;"
-                        loading="lazy">
+
+                        <img src="assets/img/academyweb/logos/logotipo-cc.svg" width="250px" height="40"
+                            alt="Logo Campuus" style="margin-bottom: 20px;" loading="lazy">
 
 
-                        <h5 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="2300" class="mb-4 ps-3" style="border-left: solid 20px #2962ff;color: var(--white); ">
-                            
-                        <strong>Aprende a programar creando&nbsp;tus propios videojuegos</strong></h5>
+                        <h5 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="2300" class="mb-4 ps-3"
+                            style="border-left: solid 20px #2962ff;color: var(--white); ">
 
-                        <h1 class="display-3" data-aos="fade" data-aos-duration="1000" data-aos-delay="1500" style="color: var(--white);"><strong> Jóvenes que aman jugar y quieren pasar a crear. </strong></h1>
+                            <strong>Aprende a programar creando&nbsp;tus propios videojuegos</strong>
+                        </h5>
+
+                        <h1 class="display-3" data-aos="fade" data-aos-duration="1000" data-aos-delay="1500"
+                            style="color: var(--white);"><strong> Jóvenes que aman jugar y quieren pasar a crear.
+                            </strong></h1>
                     </div>
                 </div>
             </div>
             <div class="row align-items-end" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="3000">
                 <div class="col-12 col-sm-8 col-lg-4 offset-xl-1">
-                    <div class="mt-4"><a class="btn btn-primary btn-lg mt-4 px-5" role="button" href="https://www.escoolar.com/academy-coding-registro">Inscríbete ahora</a></div>
+                    <div class="mt-4"><a class="btn btn-primary btn-lg mt-4 px-5" role="button"
+                            href="https://www.escoolar.com/academy-coding-registro">Inscríbete ahora</a></div>
                 </div>
                 <!-- <div class="col-12 col-sm-8 col-lg-4 offset-xl-1">
                     <div class="mt-4"><img src="assets/img/academyweb/logo-CC.svg"></div>
@@ -196,92 +294,169 @@
                 <div class="col">
                     <div class="sliderf">
                         <div class=" slide-track">
-                       
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46" alt="Logo Blender" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Python.png" width="109" height="31" alt="Logo Python" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Scratch.png" width="111" height="66" alt="Logo Scratch" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/logos/X-Plane_11_logo.svg" style="max-height: 60px;max-width: 200px;" width="131" height="22" alt="Logo X-Plane" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/logos/arduino.svg" style="max-height: 55px;" width="54" height="37" alt="Logo Arduino" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/academyweb/logos/logo.png" width="190" height="56" alt="Logo Blender" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46" alt="Logo Blender" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Python.png" width="109" height="31" alt="Logo Python" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Scratch.png" width="111" height="66" alt="Logo Scratch" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/logos/X-Plane_11_logo.svg" style="max-height: 60px;max-width: 200px;" width="131" height="22" alt="Logo X-Plane" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/academyweb/logos/nasa.png" style="max-height: 55px;" width="54" height="55" alt="Logo Arduino" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46" alt="Logo Blender" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Lua-Logo.svg.png" width="75" height="75" alt="Logo Roblox" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/academyweb/logos/logo.png" width="190" height="56" alt="Logo Blender" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Python.png" width="109" height="31" alt="Logo Python" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Scratch.png" width="111" height="66" alt="Logo Scratch" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/logos/X-Plane_11_logo.svg" style="max-height: 60px;max-width: 200px;" width="131" height="22" alt="Logo X-Plane" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/academyweb/logos/nasa.png" style="max-height: 55px;" width="54" height="55" alt="Logo Arduino" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46" alt="Logo Blender" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox" loading="lazy"></div>
-                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img src="assets/img/academyweb/logos/logo.png" width="190" height="56" alt="Logo Blender" loading="lazy"></div>
-                            
+
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46"
+                                    alt="Logo Blender" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Python.png" width="109" height="31" alt="Logo Python"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Scratch.png" width="111" height="66" alt="Logo Scratch"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/logos/X-Plane_11_logo.svg"
+                                    style="max-height: 60px;max-width: 200px;" width="131" height="22"
+                                    alt="Logo X-Plane" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/logos/arduino.svg" style="max-height: 55px;" width="54" height="37"
+                                    alt="Logo Arduino" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/academyweb/logos/logo.png" width="190" height="56"
+                                    alt="Logo Blender" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46"
+                                    alt="Logo Blender" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Python.png" width="109" height="31" alt="Logo Python"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Scratch.png" width="111" height="66" alt="Logo Scratch"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/logos/X-Plane_11_logo.svg"
+                                    style="max-height: 60px;max-width: 200px;" width="131" height="22"
+                                    alt="Logo X-Plane" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/academyweb/logos/nasa.png" style="max-height: 55px;" width="54"
+                                    height="55" alt="Logo Arduino" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46"
+                                    alt="Logo Blender" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Lua-Logo.svg.png" width="75" height="75"
+                                    alt="Logo Roblox" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/academyweb/logos/logo.png" width="190" height="56"
+                                    alt="Logo Blender" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Python.png" width="109" height="31" alt="Logo Python"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Scratch.png" width="111" height="66" alt="Logo Scratch"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/logos/X-Plane_11_logo.svg"
+                                    style="max-height: 60px;max-width: 200px;" width="131" height="22"
+                                    alt="Logo X-Plane" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/academyweb/logos/nasa.png" style="max-height: 55px;" width="54"
+                                    height="55" alt="Logo Arduino" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/Logo_Blender.svg" width="108" height="46"
+                                    alt="Logo Blender" loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/steam/logos/roblox.png" width="89" height="27" alt="Logo Roblox"
+                                    loading="lazy"></div>
+                            <div class="d-flex justify-content-center align-items-center slide px-2 clients-item"><img
+                                    src="assets/img/academyweb/logos/logo.png" width="190" height="56"
+                                    alt="Logo Blender" loading="lazy"></div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <section class="medium-padding100">
+    <section class="medium-padding100">
         <div class="container">
             <div class="row mb60">
                 <div class="col col-xl-6 col-lg-6 m-auto col-md-12 col-sm-12 col-12">
                     <div class="crumina-module crumina-heading align-center"><a href="recursos.html">
-                            <div data-aos="fade" class="heading-sup-title"><a href="recursos.html"><h2>Game dev</h2></a>
-                                <div class="my-4 mx-auto" style="width: 80px;"><img src="assets/img/academyweb/div-yellow.svg"></div>
+                            <div data-aos="fade" class="heading-sup-title"><a href="recursos.html">
+                                    <h2>Game dev</h2>
+                                </a>
+                                <div class="my-4 mx-auto" style="width: 80px;"><img
+                                        src="assets/img/academyweb/div-yellow.svg"></div>
                             </div>
                         </a>
-                         <h5 data-aos="fade-up" class="text-blue mb-4"><strong>De jugadores a creadores</strong></h5>
-                      
-                        <p data-aos="fade-up">&nbsp; En Game dev de Academy Coding College, los alumnos dan un gran salto, dejan de ser jugadores pasi
-vos y se convierten en creadores de mundos virtuales. Con Roblox Studio, aprenden a construir escenarios 
-en 3D, programar mecánicas con Lua y publicar juegos que pueden compartir con sus amigos. Además, 
-refuerzan la lógica con Godot y se inician en Python, el lenguaje más usado en el mundo de la tecnología.</p>
+                        <h5 data-aos="fade-up" class="text-blue mb-4"><strong>De jugadores a creadores</strong></h5>
+
+                        <p data-aos="fade-up">&nbsp; En Game dev de Academy Coding College, los alumnos dan un gran
+                            salto, dejan de ser jugadores pasi
+                            vos y se convierten en creadores de mundos virtuales. Con Roblox Studio, aprenden a
+                            construir escenarios
+                            en 3D, programar mecánicas con Lua y publicar juegos que pueden compartir con sus amigos.
+                            Además,
+                            refuerzan la lógica con Godot y se inician en Python, el lenguaje más usado en el mundo de
+                            la tecnología.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up">
                     <div class="card rounded hvr-grow" style="border-top: 5px solid #00e5ff;height: 100%;">
-                        <div class="card-header p-0"><img src="assets/img/academyweb/ccollege/cards/roblox-card.png" style="width: 100%;"></div>
+                        <div class="card-header p-0"><img src="assets/img/academyweb/ccollege/cards/roblox-card.png"
+                                style="width: 100%;"></div>
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div>
                                 <h3>Roblox Studio</h3>
-                                <p class="mt-3">Roblox Studio La plataforma&nbsp;global donde millones de&nbsp;jóvenes publican sus juegos.&nbsp;<br>Aquí los alumnos crean sus&nbsp;primeras experiencias en 3D&nbsp;y aprenden Lua scripting.</p>
+                                <p class="mt-3">Roblox Studio La plataforma&nbsp;global donde millones de&nbsp;jóvenes
+                                    publican sus juegos.&nbsp;<br>Aquí los alumnos crean sus&nbsp;primeras experiencias
+                                    en 3D&nbsp;y aprenden Lua scripting.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="150">
                     <div class="card rounded hvr-grow" style="border-top: 5px solid #ffbb00;height: 100%;">
-                        <div class="card-header p-0"><img src="assets/img/academyweb/ccollege/cards/godot-card.png" style="width: 100%;"></div>
+                        <div class="card-header p-0"><img src="assets/img/academyweb/ccollege/cards/godot-card.png"
+                                style="width: 100%;"></div>
                         <div class="card-body d-flex flex-column justify-content-between">
-                            <div><h3>Godot Engine</h3>
-                                <p class="mt-3">Godot es un motor de código&nbsp;abierto para crear juegos&nbsp;2D/3D con un editor visual y&nbsp;<br>GDScript. Ideal para aprender&nbsp;rápido, prototipar y exportar a&nbsp;PC, web y móvil</p>
+                            <div>
+                                <h3>Godot Engine</h3>
+                                <p class="mt-3">Godot es un motor de código&nbsp;abierto para crear juegos&nbsp;2D/3D
+                                    con un editor visual y&nbsp;<br>GDScript. Ideal para aprender&nbsp;rápido,
+                                    prototipar y exportar a&nbsp;PC, web y móvil</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-10 col-sm-10 col-md-4 col-lg-4 mx-auto py-2" data-aos="fade-up" data-aos-delay="300">
                     <div class="card rounded hvr-grow" style="border-top: 5px solid #ff6d00;height: 100%;">
-                        <div class="card-header p-0"><img src="assets/img/academyweb/ccollege/cards/phyton-card.png" style="width: 100%;"></div>
+                        <div class="card-header p-0"><img src="assets/img/academyweb/ccollege/cards/phyton-card.png"
+                                style="width: 100%;"></div>
                         <div class="card-body d-flex flex-column  justify-content-between">
-                            <div><h3>Phyton</h3>
-                                <p class="mt-3">&nbsp;Python&nbsp;Lenguaje profesional, usado por Google, Netflix&nbsp;y miles de empresas tecnoló<br>gicas. Los alumnos tienen aquí su primer contacto real&nbsp;con código escrito.</p>
+                            <div>
+                                <h3>Phyton</h3>
+                                <p class="mt-3">&nbsp;Python&nbsp;Lenguaje profesional, usado por Google, Netflix&nbsp;y
+                                    miles de empresas tecnoló<br>gicas. Los alumnos tienen aquí su primer contacto
+                                    real&nbsp;con código escrito.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="pt-3">
-                        <p data-aos="fade-up">&nbsp;Para la vida real, pensamiento lógico y matemático. Aprenden a&nbsp;ordenar instrucciones y diseñar sistemas que funcionan.&nbsp;Creatividad aplicada, pasan de imaginar un mundo a programarlo&nbsp;y verlo jugable. Confianza y motivación, publican sus propios&nbsp;juegos en Roblox y los comparten con amigos. Preparación&nbsp;académica, introducción a Python como base para futuros&nbsp;lenguajes de programación. Habilidades de comunicación y&nbsp;liderazgo, trabajan en equipo y presentan sus proyectos.</p>
+                        <p data-aos="fade-up">&nbsp;Para la vida real, pensamiento lógico y matemático. Aprenden
+                            a&nbsp;ordenar instrucciones y diseñar sistemas que funcionan.&nbsp;Creatividad aplicada,
+                            pasan de imaginar un mundo a programarlo&nbsp;y verlo jugable. Confianza y motivación,
+                            publican sus propios&nbsp;juegos en Roblox y los comparten con amigos.
+                            Preparación&nbsp;académica, introducción a Python como base para futuros&nbsp;lenguajes de
+                            programación. Habilidades de comunicación y&nbsp;liderazgo, trabajan en equipo y presentan
+                            sus proyectos.</p>
                     </div>
                 </div>
             </div>
@@ -296,154 +471,226 @@ refuerzan la lógica con Godot y se inician en Python, el lenguaje más usado en
                     <div class="my-4" style="width: 150px;border-top: solid #2962ff 3px;"></div>
                     <p class="lead">Clase de introducción</p>
                     <ol>
-                        <li>¿Qué es programar?</li>
-                        <li>Pensamiento computacional</li>
-                        <li>Conocer Scratch por primera vez</li>
-                        <li>Primeros movimientos del sprite</li>
-                        <li>Eventos básicos: “Cuando hago esto, pasa esto”</li>
-                        <li>Mini-experimento</li>
+                        <li>¿Qué es Roblox Studio y para qué sirve?</li>
+                        <li>¿Qué es crear un juego?</li>
+                        <li>Conociendo Roblox Studio por primera vez (interfaz básica)</li>
+                        <li>Explorando el mundo 3D: cámara, mover y rotar objetos</li>
+                        <li>Primer objeto en escena (Part): crear, mover y cambiar tamaño</li>
+                        <li>Mini-experimento: construir una plataforma y probarla</li>
                         <li>Presentación del proyecto del módulo</li>
                     </ol>
                     <p class="lead mt-4">Cada módulo</p>
                     <div>
-                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;" src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>Cada nivel con cuatro módulos</strong></p>
-                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;" src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>8 clases por módulo</strong></p>
-                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;" src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>48 horas de clase en vivo</strong></p>
-                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;" src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>32 horas de clase en vivo con instructor por módulo</strong></p>
+                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;"
+                                src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>Cada nivel con cuatro
+                                módulos</strong></p>
+                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;"
+                                src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>8 clases por
+                                módulo</strong></p>
+                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;"
+                                src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>48 horas de clase en
+                                vivo</strong></p>
+                        <p class="d-flex align-items-center mb-2"><img class="me-2" style="height: 15px;"
+                                src="assets/img/academyweb/ccollege/icons8-game-16.png"><strong>32 horas de clase en
+                                vivo con instructor por módulo</strong></p>
                     </div>
                     <div class="accordion mt-4" role="tablist" id="accordion-2">
                         <div class="accordion-item bg-light rounded">
-                            <h2 class="accordion-header mb-0" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="false" aria-controls="accordion-2 .item-1">Módulo 1 -<strong>Scratch Básico</strong></button></h2>
-                            <div class="accordion-collapse collapse item-1 bg-white" role="tabpanel" data-bs-parent="#accordion-2">
+                            <h2 class="accordion-header mb-0" role="tab">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#accordion-2 .item-1" aria-expanded="false"
+                                    aria-controls="accordion-2 .item-1">
+                                    Módulo 1 - <strong>Roblox Studio Básico</strong>
+                                </button>
+                            </h2>
+
+                            <div class="accordion-collapse collapse item-1 bg-white" role="tabpanel"
+                                data-bs-parent="#accordion-2">
                                 <div class="accordion-body">
                                     <div>
                                         <div class="row">
                                             <div class="col py-3">
                                                 <ol>
-                                                    <li>&nbsp;¿Qué es programar? Pensamiento computacional </li>
-                                                    <li>&nbsp;Interfaz de Scratch (escenarios, sprites,bloques) </li>
-                                                    <li> Movimientos y secuencias </li>
-                                                    <li> Eventos básicos (bandera/teclas </li>
-                                                    <li> Bucles simples</li>
-                                                    <li> Animaciones y sonidos</li>
-                                                    <li> Diseño del mini-juego</li>
-                                                    <li>Proyecto parcial: Mini-juego de persecución</li>
-                                                    <li>&nbsp;Proyecto del módulo: Mini-juego de persecución en&nbsp;<br>Scratch.</li>
-                                                    <li>Habilidades clave: Atención, resolución de problemas,&nbsp;<br>confianza (“¡yo puedo!”).</li>
+                                                    <li>¿Qué es Roblox Studio y cómo se crean los juegos?</li>
+                                                    <li>Conociendo la interfaz de Roblox Studio (Explorer, Properties,
+                                                        Viewport)</li>
+                                                    <li>Navegación en el mundo 3D (cámara, zoom, mover vista)</li>
+                                                    <li>Primeros objetos: Parts (crear, mover, escalar y rotar)</li>
+                                                    <li>Colores y materiales para darle estilo al mundo</li>
+                                                    <li>Exploración básica de físicas: gravedad y colisiones</li>
+                                                    <li>Diseño del primer escenario/jump map</li>
+                                                    <li>Mini-proyecto: Plataforma jugable</li>
+                                                    <li>Proyecto del módulo: Mini-mapa de obstáculos en Roblox</li>
+                                                    <li>Habilidades clave: Creatividad, pensamiento espacial, lógica
+                                                        básica y confianza (“¡sí jala!”)</li>
                                                 </ol>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item bg-light rounded">
-                            <h2 class="accordion-header mb-0" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-2" aria-expanded="false" aria-controls="accordion-2 .item-2">Módulo 2 - <strong>Scratch Avanzado</strong></button></h2>
-                            <div class="accordion-collapse collapse item-2 bg-white" role="tabpanel" data-bs-parent="#accordion-2">
-                                <div class="accordion-body">
-                                    <div>
-                                        <div class="row">
-                                            <div class="col py-3">
-                                                <ol>
-                                                    <li> Variables: puntos y vidas</li>
-                                                    <li>Condicionales (si/entonces)</li>
-                                                    <li> Pantallas múltiples y niveles</li>
-                                                    <li> Clones (enemigos/ítems)</li>
-                                                    <li> Cronómetro y contrarreloj</li>
-                                                    <li> Gráficos/sonidos mejorados</li>
-                                                    <li>Dificultad progresiva</li>
-                                                    <li>Proyecto parcial: Juego arcade completo</li>
-                                                    <li>Proyecto del módulo: Arcade con niveles y puntaje.Habilidades clave: Planear, construir, probar, mejorar&nbsp;(iteración).</li>
-                                                </ol>
+
+                            <div class="accordion-item bg-light rounded">
+                                <h2 class="accordion-header mb-0" role="tab">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordion-2 .item-2" aria-expanded="false"
+                                        aria-controls="accordion-2 .item-2">
+                                        Módulo 2 - <strong>Roblox Studio Avanzado</strong>
+                                    </button>
+                                </h2>
+
+                                <div class="accordion-collapse collapse item-2 bg-white" role="tabpanel"
+                                    data-bs-parent="#accordion-2">
+                                    <div class="accordion-body">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col py-3">
+                                                    <ol>
+                                                        <li>Introducción a scripts en Roblox (Lua básico)</li>
+                                                        <li>Variables: puntos, vidas y monedas</li>
+                                                        <li>Condicionales: si pasa esto, ocurre aquello (if/then)</li>
+                                                        <li>Eventos y detección de colisiones (Touched)</li>
+                                                        <li>Spawns, checkpoints y respawn del jugador</li>
+                                                        <li>Teleport y cambio de áreas/niveles</li>
+                                                        <li>Dificultad progresiva (más obstáculos, más reto)</li>
+                                                        <li>Interfaz básica (GUI): contador de puntos y vidas</li>
+                                                        <li>Proyecto parcial: Juego de obstáculos con puntaje</li>
+                                                        <li>Proyecto del módulo: Juego completo con niveles, UI y
+                                                            sistema de puntos<br>
+                                                            Habilidades clave: Pensamiento lógico, planificación,
+                                                            prueba-error e iteración (“debuggear sin llorar”).</li>
+                                                    </ol>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-                        </div>
-                        <div class="accordion-item bg-light rounded">
-                            <h2 class="accordion-header mb-0" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-3" aria-expanded="false" aria-controls="accordion-2 .item-3">Módulo 3 - <strong>Minecraft + Roblox Intro</strong></button></h2>
-                            <div class="accordion-collapse collapse item-3 bg-white" role="tabpanel" data-bs-parent="#accordion-2">
-                                <div class="accordion-body">
-                                    <div>
-                                        <div class="row">
-                                            <div class="col py-3">
-                                                <ol>
-                                                    <li>Minecraft Education: introducción</li>
-                                                    <li> Comandos y bloques de código</li>
-                                                    <li>Automatizaciones simples</li>
-                                                    <li> Reto de construcción guiado</li>
-                                                    <li>Roblox Studio: introducción</li>
-                                                    <li> Interfaz y objetos 3D</li>
-                                                    <li> Diseño de un obby simple</li>
-                                                    <li>&nbsp;Proyecto parcial: Construcción automatizada +&nbsp;obby básico</li>
-                                                    <li>&nbsp;Proyecto del módulo: Construcción automatizada +&nbsp;obby simple publicado.</li>
-                                                    <li>&nbsp;Habilidades clave: Espacio 3D, colaboración y pensamiento creativo aplicado.</li>
-                                                </ol>
+                            <div class="accordion-item bg-light rounded">
+                                <h2 class="accordion-header mb-0" role="tab">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordion-2 .item-3" aria-expanded="false"
+                                        aria-controls="accordion-2 .item-3">
+                                        Módulo 3 - <strong>Godot + Python Básico</strong>
+                                    </button>
+                                </h2>
+
+                                <div class="accordion-collapse collapse item-3 bg-white" role="tabpanel"
+                                    data-bs-parent="#accordion-2">
+                                    <div class="accordion-body">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col py-3">
+                                                    <ol>
+                                                        <li>¿Qué es Godot y cómo se crean videojuegos?</li>
+                                                        <li>Conociendo el editor de Godot (escenas, nodos y vista)</li>
+                                                        <li>Conceptos básicos de programación con Python</li>
+                                                        <li>Variables y valores (posición, velocidad, puntos)</li>
+                                                        <li>Condicionales simples (si pasa esto, sucede esto)</li>
+                                                        <li>Movimientos del personaje con código</li>
+                                                        <li>Interacción básica: colisiones y objetos</li>
+                                                        <li>Proyecto parcial: Escena interactiva con personaje</li>
+                                                        <li>Proyecto del módulo: Mini-videojuego 2D creado en Godot con
+                                                            lógica en Python</li>
+                                                        <li>Habilidades clave: Lógica de programación, pensamiento
+                                                            estructurado y creatividad aplicada (“ya programo de
+                                                            verdad”).</li>
+                                                    </ol>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-                        </div>
-                        <div class="accordion-item bg-light rounded">
-                            <h2 class="accordion-header mb-0" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-4" aria-expanded="false" aria-controls="accordion-2 .item-4">Módulo&nbsp;4 - <strong>Integración y Final</strong></button></h2>
-                            <div class="accordion-collapse collapse item-4 bg-white" role="tabpanel" data-bs-parent="#accordion-2">
-                                <div class="accordion-body">
-                                    <div>
-                                        <div class="row">
-                                            <div class="col py-3">
-                                                <ol>
-                                                    <li> Repaso de conceptos </li>
-                                                    <li> Ideación del juego final </li>
-                                                    <li>Desarrollo (fase 1)</li>
-                                                    <li> Desarrollo (fase 2)</li>
-                                                    <li> Playtesting</li>
-                                                    <li>Pulido final</li>
-                                                    <li> Presentación (demo)</li>
-                                                    <li>&nbsp;Proyecto final: Videojuego en Scratch +&nbsp;reto jugable en Roblox/Minecraft</li>
-                                                    <li>Proyecto del módulo: Juego final en Scratch +&nbsp;mini-reto en Roblox/Minecraft.</li>
-                                                    <li>Habilidades clave: Autonomía, trabajo en equipo,&nbsp;orgullo por el logro y portafolio inicial.</li>
-                                                </ol>
+                            <div class="accordion-item bg-light rounded">
+                                <h2 class="accordion-header mb-0" role="tab">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordion-2 .item-4" aria-expanded="false"
+                                        aria-controls="accordion-2 .item-4">
+                                        Módulo 4 - <strong>Roblox Multiplayer + Proyecto Final</strong>
+                                    </button>
+                                </h2>
+
+                                <div class="accordion-collapse collapse item-4 bg-white" role="tabpanel"
+                                    data-bs-parent="#accordion-2">
+                                    <div class="accordion-body">
+                                        <div>
+                                            <div class="row">
+                                                <div class="col py-3">
+                                                    <ol>
+                                                        <li>Roblox Multiplayer: servidores, partidas públicas y privadas
+                                                        </li>
+                                                        <li>Roles y funciones dentro del juego (player, enemy, admin,
+                                                            etc.)</li>
+                                                        <li>Lua avanzado: funciones y tablas</li>
+                                                        <li>Comunicación entre jugadores (eventos y sincronización
+                                                            básica)</li>
+                                                        <li>Interfaz avanzada (UI): inventario y HUD simple</li>
+                                                        <li>Introducción a monetización: Game Passes</li>
+                                                        <li>Desarrollo del proyecto final (fase 1: mecánicas y mapa)
+                                                        </li>
+                                                        <li>Desarrollo del proyecto final (fase 2: UI y multijugador)
+                                                        </li>
+                                                        <li>Proyecto final: Juego multijugador avanzado en Roblox +
+                                                            mini-proyecto en Python</li>
+                                                        <li>Habilidades clave: Colaboración, diseño social, comunicación
+                                                            y presentación (“esto ya es estudio serio”).</li>
+                                                    </ol>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-                <div class="col-12 col-lg-4 d-flex align-items-center mx-auto"><img src="assets/img/academyweb/ccollege/boy-1.png"></div>
+                <div class="col-12 col-lg-6 d-flex align-items-center mx-auto"><img
+                        src="assets/img/academyweb/ccollege/modul-complet.png"></div>
             </div>
-        </div>
     </section>
 
-    
+
     <!-- Modal: formulario de inicio de sesión -->
     <div class="modal fade" role="dialog" tabindex="-1" id="login" aria-labelledby="login" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-dialog m-0" role="document" style="background: #fff;">
-                    <div class="modal-content"><a href="#" class="close icon-close" data-dismiss="modal" aria-label="Close">
-			</a>
+                    <div class="modal-content"><a href="#" class="close icon-close" data-dismiss="modal"
+                            aria-label="Close">
+                        </a>
                         <div class="text-center modal-header" style="background:#2962ff">
-                            <h6 class="text-center text-white title">Iniciar sesión en escoolar<small><strong>.com</strong></small></h6>
+                            <h6 class="text-center text-white title">Iniciar sesión en
+                                escoolar<small><strong>.com</strong></small></h6>
                         </div>
                         <div class="modal-body">
                             <form>
                                 <div class="row">
                                     <div class="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                        <div class="label-floating form-group mb-3"><label class="form-label control-label">Ingresa tu usuario</label><input class="form-control" type="email" style="background: #fff;"></div>
-                                        <div class="label-floating form-group mb-3"><label class="form-label control-label">Ingresa tu contraseña</label><input class="form-control" type="password" style="background: #fff;"></div>
+                                        <div class="label-floating form-group mb-3"><label
+                                                class="form-label control-label">Ingresa tu usuario</label><input
+                                                class="form-control" type="email" style="background: #fff;"></div>
+                                        <div class="label-floating form-group mb-3"><label
+                                                class="form-label control-label">Ingresa tu contraseña</label><input
+                                                class="form-control" type="password" style="background: #fff;"></div>
                                         <div class="remember">
-                                            <div class="checkbox"><label class="form-label">Recordarme<input type="checkbox"></label></div><a class="forgot" href="account-recuperarcontrasena.html" data-bs-toggle="modal" data-bs-target="#restore-password">¿Olvidaste tu contraseña?</a>
-                                        </div><a class="btn btn-primary btn-lg full-width" role="button" href="perfiles/perfiles-wizard-1.html">Iniciar sesión</a>
+                                            <div class="checkbox"><label class="form-label">Recordarme<input
+                                                        type="checkbox"></label></div><a class="forgot"
+                                                href="account-recuperarcontrasena.html" data-bs-toggle="modal"
+                                                data-bs-target="#restore-password">¿Olvidaste tu contraseña?</a>
+                                        </div><a class="btn btn-primary btn-lg full-width" role="button"
+                                            href="perfiles/perfiles-wizard-1.html">Iniciar sesión</a>
                                     </div>
                                 </div>
                             </form>
                         </div>
                         <div class="bg-light d-flex justify-content-center modal-footer">
-                            <p class="text-center mt-2">¿Aún no tienes una cuenta?<br><a class="me-1" href="registro/registro.html"><strong>¡Regístrate ahora!</strong></a></p>
+                            <p class="text-center mt-2">¿Aún no tienes una cuenta?<br><a class="me-1"
+                                    href="registro/registro.html"><strong>¡Regístrate ahora!</strong></a></p>
                         </div>
                     </div>
                 </div>
@@ -458,9 +705,11 @@ refuerzan la lógica con Godot y se inician en Python, el lenguaje más usado en
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="widget w-about"><a class="logo" href="index.html">
-                            <div class="img-wrap"><img src="assets/img/academyweb/logo-CC.svg" width="200px" alt="Logo Autoores" loading="lazy"></div>
+                            <div class="img-wrap"><img src="assets/img/academyweb/logo-CC.svg" width="200px"
+                                    alt="Logo Autoores" loading="lazy"></div>
                         </a><img class="ps-1 mt-3" src="assets/img/tirabanderas.svg" alt="Banderas" loading="lazy">
-                        <p class="text-white-50 mt-4">Descubre una experiencia de aprendizaje única, innovadora e interactiva.<br></p>
+                        <p class="text-white-50 mt-4">Descubre una experiencia de aprendizaje única, innovadora e
+                            interactiva.<br></p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2 offset-lg-2">
@@ -470,8 +719,10 @@ refuerzan la lógica con Godot y se inician en Python, el lenguaje más usado en
                     <div class="widget w-list">
                         <h6 class="text-white-50">Productos</h6>
                         <ul>
-                            <li><a href="https://www.escoolar.com/academy" style="font-family: 'omnespro';">autoores</a></li>
-                            <li><a href="https://www.escoolar.com/academy" style="font-family: 'omnespro';">academy</a></li>
+                            <li><a href="https://www.escoolar.com/academy" style="font-family: 'omnespro';">autoores</a>
+                            </li>
+                            <li><a href="https://www.escoolar.com/academy" style="font-family: 'omnespro';">academy</a>
+                            </li>
                             <li><a href="https://www.campuus.us" style="font-family: 'omnespro';">campuus</a></li>
                             <li><a href="https://www.escoolar.com/" style="font-family: 'omnespro';">escoolar</a></li>
                         </ul>
@@ -480,12 +731,22 @@ refuerzan la lógica con Godot y se inician en Python, el lenguaje más usado en
                 <div class="col-12 col-sm-12 col-md-4 col-lg-2">
                     <div class="widget w-list">
                         <h6 class="text-white-50">Contacto</h6>
-                        <p>Brindamos un servicio excepcional y nos encantaría que puedas experimentarlo.<br></p><a href="mailto:soporte@escoolar.mx"><i class="far fa-envelope me-1"></i>soporte@escoolar.mx</a><a href="tel:+525588805183"><i class="fas fa-phone-alt me-1"></i>+52 (55) 8880 5183</a>
+                        <p>Brindamos un servicio excepcional y nos encantaría que puedas experimentarlo.<br></p><a
+                            href="mailto:soporte@escoolar.mx"><i
+                                class="far fa-envelope me-1"></i>soporte@escoolar.mx</a><a href="tel:+525588805183"><i
+                                class="fas fa-phone-alt me-1"></i>+52 (55) 8880 5183</a>
                     </div>
                 </div>
-                <div class="col-12 item social py-4"><a href="https://www.facebook.com/plataformaescoolar/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/plataformaescoolar/" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.youtube.com/channel/UCJtPDofwONzvgxZX60HgM2A" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div>
+                <div class="col-12 item social py-4"><a href="https://www.facebook.com/plataformaescoolar/"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a
+                        href="https://www.instagram.com/plataformaescoolar/" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a><a
+                        href="https://www.youtube.com/channel/UCJtPDofwONzvgxZX60HgM2A" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a></div>
                 <div class="col col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="sub-footer-copyright"><span>Trabajamos con amor y dedicación&nbsp;<i class="fas fa-heart mx-1" data-bss-hover-animate="bounce"></i>&nbsp;| Bkeff SA de CV 2025 |&nbsp; &nbsp; &nbsp;Todos los derechos reservados.</span></div>
+                    <div class="sub-footer-copyright"><span>Trabajamos con amor y dedicación&nbsp;<i
+                                class="fas fa-heart mx-1" data-bss-hover-animate="bounce"></i>&nbsp;| Bkeff SA de CV
+                            2025 |&nbsp; &nbsp; &nbsp;Todos los derechos reservados.</span></div>
                 </div>
             </div>
         </div>
